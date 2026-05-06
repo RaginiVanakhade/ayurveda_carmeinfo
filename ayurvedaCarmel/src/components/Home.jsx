@@ -386,7 +386,7 @@ const testimonials = [
   { init:"S", name:"Sunitha Pillai", role:"Rheumatoid Arthritis · Thrissur", text:"I was dependent on painkillers every single day. After 8 weeks of treatment I am completely medicine-free. Results beyond anything I imagined." },
   { init:"A", name:"Arun Kumar", role:"Parkinson's Disease · Bangalore", text:"The tremors have reduced significantly. Unni Gurukkal's expertise in neurological Marma therapy is truly extraordinary. My family is grateful." },
 ];
-
+ import Random from "../components/Random"
 export default function Home() {
 
   return (
@@ -585,7 +585,7 @@ export default function Home() {
         <p>"Your body already knows the way — let us help it remember."</p>
         <a href="/contact" className="btn-white">Book a Free Consultation</a>
       </section>
-
+    <Random/>
     </>
   );
 }
