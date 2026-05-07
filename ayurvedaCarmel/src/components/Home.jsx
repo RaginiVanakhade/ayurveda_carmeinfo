@@ -308,17 +308,6 @@ const CSS = `
   .testi-nm { font-family:'Cinzel',serif; font-size:13px; font-weight:600; color:var(--text); }
   .testi-rl { font-size:11px; color:var(--green); margin-top:2px; letter-spacing:0.06em; }
 
-  /* ── CTA ── */
-  .cta-sec {
-    background:linear-gradient(135deg,var(--green-dark) 0%,var(--green) 60%,var(--green-mid) 100%);
-    padding:84px 32px; text-align:center; position:relative; overflow:hidden;
-  }
-  .cta-sec::before { content:''; position:absolute; inset:0; background-image:radial-gradient(circle,rgba(255,255,255,0.06) 1px,transparent 1px); background-size:32px 32px; }
-  .cta-sec h2 { font-family:'Cinzel',serif; font-size:clamp(24px,4vw,44px); font-weight:700; color:var(--white); margin-bottom:14px; position:relative; z-index:1; }
-  .cta-sec p { color:rgba(255,255,255,0.75); font-size:16px; margin-bottom:36px; font-style:italic; font-family:'Playfair Display',serif; position:relative; z-index:1; }
-  .btn-white { background:var(--white); color:var(--green-dark); padding:15px 44px; border-radius:50px; border:none; font-family:'Cinzel',serif; font-size:12px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; cursor:pointer; text-decoration:none; display:inline-block; box-shadow:0 8px 28px rgba(0,0,0,0.2); transition:transform 0.25s,box-shadow 0.25s; position:relative; z-index:1; }
-  .btn-white:hover { transform:translateY(-3px); box-shadow:0 16px 40px rgba(0,0,0,0.28); }
-
 
   /* ── RESPONSIVE ── */
   @media(max-width:1024px) {
@@ -447,7 +436,7 @@ export default function Home() {
           <div className="about-grid">
             <div className="about-imgs">
               <img className="about-main" src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=700" alt="Ayurveda" />
-              <img className="about-sub" src="https://images.unsplash.com/photo-1573461160327-6e7ce5e36a17?w=400" alt="Herbs" />
+              <img className="about-sub" src="https://static.vecteezy.com/system/resources/thumbnails/075/207/262/small/a-mortar-and-mortar-with-spices-and-herbs-on-a-wooden-table-photo.jpg" alt="Herbs" />
               <div className="about-badge"><div className="ab-num">18+</div><div className="ab-label">Years of Healing</div></div>
             </div>
             <div>
@@ -579,12 +568,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="cta-sec">
-        <h2>Begin Your Journey to Natural Healing</h2>
-        <p>"Your body already knows the way — let us help it remember."</p>
-        <a href="/contact" className="btn-white">Book a Free Consultation</a>
-      </section>
     <Random/>
     </>
   );
