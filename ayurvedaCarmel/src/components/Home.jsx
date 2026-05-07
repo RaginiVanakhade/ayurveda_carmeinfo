@@ -512,7 +512,7 @@ export default function Home() {
         <div className="section-inner">
           <div className="healer-grid">
             <div className="healer-img-wrap">
-              <img className="healer-img" src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600" alt="Healer" />
+              <img className="healer-img" src="https://trinaya.co.in/images/Prishtavasthy.jpg" alt="Healer" />
               <div className="healer-ribbon"><div className="hr-num">6000+</div><div className="hr-label">Patients Healed</div></div>
             </div>
             <div>
