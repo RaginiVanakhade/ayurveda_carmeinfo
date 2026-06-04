@@ -630,7 +630,7 @@ export default function WhyUs() {
               <h2 className="cta-title">Ready to Experience the <em>Difference?</em></h2>
               <p className="cta-desc">"Begin your healing journey with a personalized Nadi assessment and discover how traditional Kalaripayattu Nadi Marma Therapy can support your wellness, mobility, and quality of life."</p>
               <div className="cta-btns">
-                <a href="/contact" className="btn-white">Book Free Nadi Assessment</a>
+                <a href="/contact" className="btn-white">Book A Consultation</a>
                 <a href="/treatment" className="btn-outline-w">Explore Treatments</a>
               </div>
             </div>
