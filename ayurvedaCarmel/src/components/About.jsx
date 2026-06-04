@@ -287,10 +287,26 @@ const methods = [
 ];
 
 const missions = [
-  { ico:"🌿", title:"Pain-Free Living", desc:"Help every patient live pain-free without lifelong dependence on medicines, injections, or surgery." },
-  { ico:"🌱", title:"Preserve Healing Heritage", desc:"Protect and pass on the ancient knowledge of Kalaripayattu Nadi Marma — Kerala's most sacred healing tradition." },
-  { ico:"⚖️", title:"Holistic Balance", desc:"Restore true health by treating the whole person — body, mind, and soul — not just isolated symptoms." },
-  { ico:"📚", title:"Empower Communities", desc:"Educate patients and families in natural preventive health so that healing becomes a way of life." },
+{
+ ico:"🌿",
+ title:"Natural Healing",
+ desc:"Support wellness through traditional healing techniques."
+},
+{
+ ico:"✨",
+ title:"Energy Balance",
+ desc:"Encourage healthy flow of energy throughout the body."
+},
+{
+ ico:"🧘",
+ title:"Stress Relief",
+ desc:"Promote relaxation and mental calmness."
+},
+{
+ ico:"💪",
+ title:"Physical Wellness",
+ desc:"Improve flexibility, mobility and overall vitality."
+}
 ];
 
 export default function About() {
@@ -313,14 +329,19 @@ export default function About() {
           <div className="sh-left-img"/>
           <div className="sh-left-ring"/>
           <div className="sh-left-ring2"/>
-          <p className="sh-eyebrow">About Ever Ayur Life</p>
-          <h1 className="sh-big">Ancient<br/><em>Wisdom.</em>Real Results.</h1>
+         <p className="sh-eyebrow">About Kalari Nadi Marma Therapy</p>
+
+<h1 className="sh-big">
+  Ancient Healing
+  <br />
+  <em>For Modern Wellness</em>
+</h1>
           <div className="sh-divider"/>
-          <p className="sh-para">We practice Kalaripayattu Nadi Marma Therapy — Kerala's sacred healing tradition that activates the body's 107 vital energy points to restore natural balance, eliminate pain, and awaken the body's self-healing intelligence.</p>
+          <p className="sh-para">Kalari Nadi Marma Therapy is a traditional healing system from Kerala that combines Marma therapy, Nadi energy balancing and herbal oil techniques to support natural healing, relaxation and overall wellness.</p>
           <div className="sh-badge-row">
-            <div className="sh-badge"><span className="sh-badge-dot"/><span>Drug-Free Healing</span></div>
-            <div className="sh-badge"><span className="sh-badge-dot"/><span>Kerala Tradition</span></div>
-            <div className="sh-badge"><span className="sh-badge-dot"/><span>No Surgery</span></div>
+            <div className="sh-badge"><span className="sh-badge-dot"/><span>Natural Healing</span></div>
+            <div className="sh-badge"><span className="sh-badge-dot"/><span>Traditional Therapy</span></div>
+            <div className="sh-badge"><span className="sh-badge-dot"/><span>Holistic Wellness</span></div>
           </div>
         </div>
         <div className="sh-right">
@@ -328,7 +349,11 @@ export default function About() {
             <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=900" alt="Marma Therapy"/>
           </div>
           <div className="sh-stats-row">
-            {[{ico:"🌿",num:"18+",lbl:"Years of Mastery"},{ico:"👥",num:"6000+",lbl:"Patients Healed"},{ico:"🚫",num:"0",lbl:"Medicines Used"}].map((s,i)=>(
+            {[
+ { ico:"🌿",num:"100%",lbl:"Natural Care"},
+ { ico:"✨",num:"4+",lbl:"Therapies"},
+ { ico:"🧘",num:"1",lbl:"Wellness Goal"}
+].map((s,i)=>(
               <div className="sh-stat" key={i}>
                 <div className="sh-stat-ico">{s.ico}</div>
                 <div className="sh-stat-num">{s.num}</div>
@@ -347,12 +372,15 @@ export default function About() {
             <div className="zz-overlay"/>
           </div>
           <div className="zz-content">
-            <span className="zz-tag">Our Story</span>
-            <h2 className="zz-title">Rooted in <em>Kerala's</em><br/>Sacred Healing Arts</h2>
+            <span className="zz-tag">Our Heritage</span>
+           <h2 className="zz-title">
+  Rooted in Kerala's
+  <em> Traditional Healing</em>
+</h2>
             <div className="zz-line"/>
             <blockquote className="zz-quote">"When the body feels pain, true healing comes when body, mind, and soul are restored together."</blockquote>
             <p className="zz-desc">At <strong>Ever Ayur Life</strong>, we practice <strong>Kalaripayattu Nadi Marma Therapy</strong> — Kerala's ancient tradition that activates the body's 107 vital energy points to restore natural balance and eliminate pain at its root, not just its surface.</p>
-            <p className="zz-desc">Our mission: help you live a pain-free, vibrant life without medicines or surgery. Every session is deeply personalized, treating not just symptoms but the whole person.</p>
+            <p className="zz-desc">Our Commitment to Wellness: help you live a pain-free, vibrant life without medicines or surgery. Every session is deeply personalized, treating not just symptoms but the whole person.</p>
             <div className="zz-checks">
               {["100% Drug-Free — Zero Side Effects","No Surgery Approach for Chronic Conditions","Personalized Assessment for Every Individual","Kalaripayattu — Kerala's Living Healing Tradition"].map((c,i)=>(
                 <div className="zz-check" key={i}><div className="zz-chk">✓</div>{c}</div>
@@ -541,10 +569,10 @@ export default function About() {
       <section className="mission-sec">
         <div className="mission-inner">
           <div>
-            <span className="zz-tag">Our Mission</span>
+            <span className="zz-tag">Our Commitment to Wellness</span>
             <h2 className="zz-title" style={{fontSize:"clamp(22px,3vw,38px)"}}>Committed to<br/><em>Natural Health</em> for All</h2>
             <div className="zz-line"/>
-            <p className="zz-desc">Our mission is not merely to treat symptoms — it is to guide every patient toward lasting freedom from pain, medicine, and surgical intervention through the intelligence of nature and ancient tradition.</p>
+            <p className="zz-desc">Our Commitment to Wellness is not merely to treat symptoms — it is to guide every patient toward lasting freedom from pain, medicine, and surgical intervention through the intelligence of nature and ancient tradition.</p>
             <p className="zz-desc">We believe the body, when properly supported, has the capacity to heal itself from conditions that modern medicine considers chronic or irreversible.</p>
             <div className="mp-list">
               {missions.map((m,i)=>(
