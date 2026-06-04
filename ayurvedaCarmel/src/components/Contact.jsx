@@ -505,49 +505,116 @@ const CSS = `
   }
 `;
 
-const mqItems = ["Contact Us","Book Free Consultation","Thiruvananthapuram · Kerala","Nadi Assessment","Drug-Free Healing","Marma Therapy","18+ Years Mastery","6000+ Healed","Ever Ayur Life"];
-
+const mqItems = [
+  "Free Nadi Consultation",
+  "Traditional Marma Therapy",
+  "18+ Years of Clinical Experience",
+  "Drug-Free Healing",
+  "Natural Pain Relief",
+  "6000+ Patients Guided",
+  "Personalized Treatment Plans",
+  "Holistic Ayurvedic Care",
+  "Ever Ayur Life"
+];
 const concerns = [
-  {ico:"🤕",name:"Chronic Pain"},
-  {ico:"🦴",name:"Joint & Spine"},
-  {ico:"🧠",name:"Neurological"},
-  {ico:"🌸",name:"Women's Health"},
-  {ico:"🔄",name:"Surgery Alternative"},
-  {ico:"💚",name:"General Wellness"},
-  {ico:"🦵",name:"Arthritis"},
-  {ico:"😮‍💨",name:"Stress & Fatigue"},
+  { ico: "🦴", name: "Back & Neck Pain" },
+  { ico: "🦵", name: "Joint Disorders" },
+  { ico: "🤕", name: "Sports Injuries" },
+  { ico: "🧠", name: "Neurological Conditions" },
+  { ico: "💪", name: "Muscle & Nerve Pain" },
+  { ico: "🌸", name: "Women's Wellness" },
+  { ico: "❤️", name: "Lifestyle Disorders" },
+  { ico: "🌿", name: "Preventive Wellness" }
 ];
 
 const slots = [
-  {t:"08:00",p:"AM"},{t:"09:00",p:"AM"},{t:"10:00",p:"AM"},{t:"11:00",p:"AM"},
-  {t:"03:30",p:"PM"},{t:"05:00",p:"PM"},{t:"06:00",p:"PM"},{t:"07:00",p:"PM"},
+  { t: "08:00", p: "AM" }, { t: "09:00", p: "AM" }, { t: "10:00", p: "AM" }, { t: "11:00", p: "AM" },
+  { t: "03:30", p: "PM" }, { t: "05:00", p: "PM" }, { t: "06:00", p: "PM" }, { t: "07:00", p: "PM" },
 ];
 
 const hoursData = [
-  {day:"Monday – Friday",times:["08:00 AM – 01:00 PM","03:30 PM – 07:00 PM"],open:true},
-  {day:"Saturday – Sunday",times:["09:00 AM – 12:00 PM","04:30 PM – 07:00 PM"],open:true},
+  {
+    day: "Monday – Saturday",
+    times: ["08:00 AM – 01:00 PM", "03:30 PM – 07:00 PM"],
+    open: true
+  },
+  {
+    day: "Sunday",
+    times: ["By Prior Appointment"],
+    open: true
+  }
 ];
 
 const infoCards = [
-  {ico:"📧",label:"Email",value:"info@everayurlife.com",sub:"Reply within 24 hours"},
-  {ico:"📞",label:"Phone",value:"+91 98765 43210",sub:"+91 91234 56789"},
-  {ico:"📍",label:"Location",value:"Thiruvananthapuram",sub:"Kerala, India"},
-  {ico:"⏰",label:"Open Today",value:"Open Now",sub:"Closes at 01:00 PM"},
+  {
+    ico: "📧",
+    label: "Email",
+    value: "care@everayurlife.com",
+    sub: "Response within 24 hours"
+  },
+  {
+    ico: "📞",
+    label: "Appointments",
+    value: "+91 XXXXX XXXXX",
+    sub: "Call or WhatsApp"
+  },
+  {
+    ico: "📍",
+    label: "Clinic",
+    value: "Thiruvananthapuram",
+    sub: "Kerala, India"
+  },
+  {
+    ico: "⏰",
+    label: "Consultation",
+    value: "Free Nadi Assessment",
+    sub: "Prior booking recommended"
+  }
 ];
 
 const reachItems = [
-  {ico:"🚗",title:"By Car",sub:"Free parking on premises"},
-  {ico:"🚌",title:"By Bus",sub:"3 min walk from stop"},
-  {ico:"✈️",title:"From Airport",sub:"14km · ~25 min drive"},
+  {
+    ico: "🚗",
+    title: "Private Parking",
+    sub: "Convenient on-site parking available"
+  },
+  {
+    ico: "🚌",
+    title: "Public Transport",
+    sub: "Accessible by major city bus routes"
+  },
+  {
+    ico: "✈️",
+    title: "Airport Access",
+    sub: "Approximately 25 minutes from airport"
+  }
 ];
 
 const faqs = [
-  {q:"Is the first consultation really free?",a:"Yes — your first Nadi assessment session is completely free of charge. Unni Gurukkal will assess your pulse, understand your condition, and outline a personalized treatment plan with no obligation."},
-  {q:"How long does a typical treatment session last?",a:"Sessions typically last between 45 minutes to 1.5 hours, depending on the condition and stage of treatment. Your first assessment session may take slightly longer."},
-  {q:"Do I need to bring any medical reports?",a:"It helps to bring any existing reports, scans, or prescriptions, but they are not mandatory. The Nadi (pulse) reading itself provides comprehensive diagnostic insight into your condition."},
-  {q:"Is Marma Therapy safe for all age groups?",a:"Yes. Kalaripayattu Nadi Marma Therapy is completely drug-free and non-invasive — it is safe for patients of all ages, from children to elderly patients. Each session is carefully tailored to the individual."},
-  {q:"How many sessions are needed to see results?",a:"Many patients notice significant improvement within 3–5 sessions. For chronic or longstanding conditions, a course of 10–15 sessions is typically recommended for lasting results."},
-  {q:"Can I visit without an appointment?",a:"Walk-ins are welcome during clinic hours, but we strongly recommend booking an appointment to ensure Unni Gurukkal is available and to minimize your waiting time."},
+  {
+    q: "What happens during the first consultation?",
+    a: "Your first visit includes a detailed discussion about your health concerns, lifestyle, medical history, and a traditional Nadi assessment. Based on the findings, a personalized treatment plan is recommended."
+  },
+  {
+    q: "Is Marma Therapy painful?",
+    a: "No. Marma Therapy uses carefully applied pressure and therapeutic techniques on specific energy points of the body. Most patients find the experience deeply relaxing and restorative."
+  },
+  {
+    q: "Can Ayurveda help with chronic pain?",
+    a: "Ayurvedic therapies are widely used to support individuals dealing with long-term musculoskeletal discomfort, joint issues, nerve-related concerns, and lifestyle disorders through a holistic treatment approach."
+  },
+  {
+    q: "How many sessions will I need?",
+    a: "The number of sessions depends on your condition, its duration, and your overall health profile. After the initial assessment, a customized treatment schedule will be discussed."
+  },
+  {
+    q: "Do I need to stop my current medications?",
+    a: "No. Never discontinue prescribed medication without consulting your physician. Ayurvedic treatments can often be integrated alongside existing medical care where appropriate."
+  },
+  {
+    q: "Do you offer preventive wellness programs?",
+    a: "Yes. We offer wellness-focused consultations and therapies designed to help maintain balance, improve vitality, and support long-term health."
+  }
 ];
 
 export default function Contact() {
@@ -555,11 +622,11 @@ export default function Contact() {
   const [selSlot, setSelSlot] = useState(null);
   const [submitted, setSubmitted] = useState(false);
   const [openFaq, setOpenFaq] = useState(null);
-  const [form, setForm] = useState({name:"",phone:"",email:"",city:"",message:""});
+  const [form, setForm] = useState({ name: "", phone: "", email: "", city: "", message: "" });
 
-  const handleChange = e => setForm(f=>({...f,[e.target.name]:e.target.value}));
+  const handleChange = e => setForm(f => ({ ...f, [e.target.name]: e.target.value }));
   const handleSubmit = e => { e.preventDefault(); setSubmitted(true); };
-  const reset = () => { setSubmitted(false); setForm({name:"",phone:"",email:"",city:"",message:""}); setSelConcern(null); setSelSlot(null); };
+  const reset = () => { setSubmitted(false); setForm({ name: "", phone: "", email: "", city: "", message: "" }); setSelConcern(null); setSelSlot(null); };
 
   return (
     <>
@@ -568,30 +635,33 @@ export default function Contact() {
       {/* MARQUEE */}
       <div className="mq">
         <div className="mq-track">
-          {[...mqItems,...mqItems,...mqItems].map((t,i)=>(
-            <span className="mq-item" key={i}>{t}<span className="mq-sep"/></span>
+          {[...mqItems, ...mqItems, ...mqItems].map((t, i) => (
+            <span className="mq-item" key={i}>{t}<span className="mq-sep" /></span>
           ))}
         </div>
       </div>
 
       {/* ── HERO ── */}
       <section className="hero">
-        <div className="hero-bg"/>
-        <div className="hero-pattern"/>
-        <div className="hero-ring-l"/>
-        <div className="hero-ring-r"/>
+        <div className="hero-bg" />
+        <div className="hero-pattern" />
+        <div className="hero-ring-l" />
+        <div className="hero-ring-r" />
         <div className="hero-inner">
           <div className="hero-left">
-            <div className="hero-eyebrow">Contact Us · Ever Ayur Life</div>
+            <div className="hero-eyebrow">
+              Ever Ayur Life · Traditional Kalari Marma Healing
+            </div>
+
             <h1 className="hero-title">
-              Let's Begin<br/>
-              Your <em>Healing.</em>
+              Restore Your Body.<br />
+              Reclaim Your <em>Wellness.</em>
             </h1>
           </div>
           <div className="hero-right">
             <span className="hero-cta-label">Scroll to form</span>
             <div className="hero-scroll-hint">
-              <div className="hsh-line"/>
+              <div className="hsh-line" />
               <span className="hsh-text">↓</span>
             </div>
           </div>
@@ -601,7 +671,7 @@ export default function Contact() {
       {/* ── INFO BAR ── */}
       <div className="info-bar">
         <div className="info-bar-inner">
-          {infoCards.map((c,i)=>(
+          {infoCards.map((c, i) => (
             <div className="ib-card" key={i}>
               <div className="ib-ico">{c.ico}</div>
               <div>
@@ -616,26 +686,30 @@ export default function Contact() {
 
       {/* ── FORM SECTION ── */}
       <section className="form-sec">
-        <div className="fs-dots"/>
-        <div className="fs-ring1"/><div className="fs-ring2"/>
+        <div className="fs-dots" />
+        <div className="fs-ring1" /><div className="fs-ring2" />
         <div className="form-sec-inner">
           <div className="fs-top">
-            <span className="fs-tag">Free Nadi Assessment · No Obligation</span>
-            <h2 className="fs-title">Book Your <em>Free</em> Consultation</h2>
-            <div className="fs-line"/>
+            <span className="fs-tag">
+              Complimentary Consultation · Personalized Guidance
+            </span>
+            <h2 className="fs-title">
+              Schedule Your <em>Healing Consultation</em>
+            </h2>
+            <div className="fs-line" />
           </div>
           <div className="fs-layout">
 
             {/* LEFT — concern selector */}
             <div className="concern-panel">
               <div className="cp-header">What brings you to us?</div>
-              {concerns.map((c,i)=>(
+              {concerns.map((c, i) => (
                 <div key={i}
-                  className={`cp-item${selConcern===i?" sel":""}`}
-                  onClick={()=>setSelConcern(i)}>
+                  className={`cp-item${selConcern === i ? " sel" : ""}`}
+                  onClick={() => setSelConcern(i)}>
                   <span className="cp-ico">{c.ico}</span>
                   <span className="cp-name">{c.name}</span>
-                  <div className="cp-check">{selConcern===i?"✓":""}</div>
+                  <div className="cp-check">{selConcern === i ? "✓" : ""}</div>
                 </div>
               ))}
             </div>
@@ -644,16 +718,17 @@ export default function Contact() {
             {submitted ? (
               <div className="success-wrap">
                 <div className="sw-ring">✓</div>
-                <h2 className="sw-title">Request <em>Received!</em></h2>
-                <p className="sw-desc">Thank you! Unni Gurukkal's team will contact you within 24 hours to confirm your free Nadi assessment session.</p>
-                <div className="sw-summary">
+                <h2 className="sw-title"> Consultation <em>Request Submitted</em></h2>
+                <p className="sw-desc">
+                  Thank you for contacting Ever Ayur Life. Our team will review your request and connect with you shortly to confirm your consultation and discuss the next steps in your healing journey.
+                </p>                <div className="sw-summary">
                   <span className="sws-tag">Your Booking Summary</span>
                   {[
-                    {k:"Name",v:form.name||"—"},
-                    {k:"Phone",v:form.phone||"—"},
-                    {k:"Concern",v:selConcern!=null?concerns[selConcern].name:"—"},
-                    {k:"Preferred Time",v:selSlot!=null?`${slots[selSlot].t} ${slots[selSlot].p}`:"—"},
-                  ].map((r,i)=>(
+                    { k: "Name", v: form.name || "—" },
+                    { k: "Phone", v: form.phone || "—" },
+                    { k: "Concern", v: selConcern != null ? concerns[selConcern].name : "—" },
+                    { k: "Preferred Time", v: selSlot != null ? `${slots[selSlot].t} ${slots[selSlot].p}` : "—" },
+                  ].map((r, i) => (
                     <div className="sws-row" key={i}>
                       <span className="sws-k">{r.k}</span>
                       <span className="sws-v">{r.v}</span>
@@ -667,7 +742,7 @@ export default function Contact() {
                 <div className="fc-header">
                   <span className="fc-h-title">Appointment Details</span>
                   <div className="fc-h-badge">
-                    <div className="fc-badge-dot"/>
+                    <div className="fc-badge-dot" />
                     Accepting Patients
                   </div>
                 </div>
@@ -675,36 +750,36 @@ export default function Contact() {
                   <form onSubmit={handleSubmit}>
                     <div className="fc-row">
                       <div className="fc-field">
-                        <input className="fc-input" type="text" name="name" placeholder=" " required value={form.name} onChange={handleChange}/>
+                        <input className="fc-input" type="text" name="name" placeholder=" " required value={form.name} onChange={handleChange} />
                         <label className="fc-lbl">Full Name</label>
                       </div>
                       <div className="fc-field">
-                        <input className="fc-input" type="tel" name="phone" placeholder=" " required value={form.phone} onChange={handleChange}/>
+                        <input className="fc-input" type="tel" name="phone" placeholder=" " required value={form.phone} onChange={handleChange} />
                         <label className="fc-lbl">Phone Number</label>
                       </div>
                       <div className="fc-field">
-                        <input className="fc-input" type="email" name="email" placeholder=" " value={form.email} onChange={handleChange}/>
+                        <input className="fc-input" type="email" name="email" placeholder=" " value={form.email} onChange={handleChange} />
                         <label className="fc-lbl">Email (Optional)</label>
                       </div>
                       <div className="fc-field">
                         <select className="fc-select" defaultValue="">
-                          <option value="" disabled/>
-                          {["Thiruvananthapuram","Kochi","Thrissur","Bangalore","Chennai","Other"].map(c=>(
+                          <option value="" disabled />
+                          {["Thiruvananthapuram", "Kochi", "Thrissur", "Bangalore", "Chennai", "Other"].map(c => (
                             <option key={c}>{c}</option>
                           ))}
                         </select>
                         <label className="fc-lbl">Your City</label>
                       </div>
                       <div className="fc-field full">
-                        <textarea className="fc-textarea" name="message" placeholder=" " value={form.message} onChange={handleChange}/>
+                        <textarea className="fc-textarea" name="message" placeholder=" " value={form.message} onChange={handleChange} />
                         <label className="fc-lbl">Describe Your Condition (Optional)</label>
                       </div>
                     </div>
 
                     <span className="fc-slot-label">Preferred Appointment Time</span>
                     <div className="fc-slots">
-                      {slots.map((s,i)=>(
-                        <div key={i} className={`fc-slot${selSlot===i?" on":""}`} onClick={()=>setSelSlot(i)}>
+                      {slots.map((s, i) => (
+                        <div key={i} className={`fc-slot${selSlot === i ? " on" : ""}`} onClick={() => setSelSlot(i)}>
                           <div className="fcs-t">{s.t}</div>
                           <div className="fcs-p">{s.p}</div>
                         </div>
@@ -735,18 +810,34 @@ export default function Contact() {
             <span className="hm-tag">Clinic Hours</span>
             <h2 className="hm-title">When We're <em>Open</em></h2>
             <div className="hours-table">
-              {hoursData.map((h,i)=>(
+              {hoursData.map((h, i) => (
                 <div className="ht-row" key={i}>
-                  <div className={`ht-dot${h.open?"":" off"}`}/>
+                  <div className={`ht-dot${h.open ? "" : " off"}`} />
                   <span className="ht-day">{h.day}</span>
                   <div className="ht-times">
-                    {h.times.map((t,j)=><span className="ht-badge" key={j}>{t}</span>)}
+                    {h.times.map((t, j) => <span className="ht-badge" key={j}>{t}</span>)}
                   </div>
                 </div>
               ))}
             </div>
             <div className="hm-stats">
-              {[{ico:"🌿",num:"18+",lbl:"Years"},{ico:"👥",num:"6K+",lbl:"Healed"},{ico:"🚫",num:"0",lbl:"Medicines"}].map((s,i)=>(
+              {[
+                {
+                  ico: "🌿",
+                  num: "18+",
+                  lbl: "Years Experience"
+                },
+                {
+                  ico: "👥",
+                  num: "6000+",
+                  lbl: "Patients Guided"
+                },
+                {
+                  ico: "🏆",
+                  num: "100%",
+                  lbl: "Natural Approach"
+                }
+              ].map((s, i) => (
                 <div className="hms-pill" key={i}>
                   <span className="hms-ico">{s.ico}</span>
                   <span className="hms-num">{s.num}</span>
@@ -758,23 +849,25 @@ export default function Contact() {
           <div className="hm-location">
             <div>
               <span className="hml-tag">How to Find Us</span>
-              <h2 className="hml-title">We're in <em>Thiruvananthapuram</em></h2>
+              <h2 className="hml-title">
+                Visit Our <em>Healing Centre</em>
+              </h2>
             </div>
             <div className="map-card">
-              <div className="map-bg"/>
-              <div className="map-grid"/>
+              <div className="map-bg" />
+              <div className="map-grid" />
               <div className="map-label">
                 <div className="ml-name">Ever Ayur Life</div>
                 <div className="ml-city">Thiruvananthapuram, Kerala</div>
               </div>
               <div className="map-pin">
-                <div className="mp-dot"/>
-                <div className="mp-stem"/>
-                <div className="mp-shadow"/>
+                <div className="mp-dot" />
+                <div className="mp-stem" />
+                <div className="mp-shadow" />
               </div>
             </div>
             <div className="reach-row">
-              {reachItems.map((r,i)=>(
+              {reachItems.map((r, i) => (
                 <div className="rr-item" key={i}>
                   <span className="rr-ico">{r.ico}</span>
                   <div>
@@ -796,9 +889,9 @@ export default function Contact() {
             <h2 className="faq-title">Frequently <em>Asked</em></h2>
           </div>
           <div className="faq-list">
-            {faqs.map((f,i)=>(
-              <div key={i} className={`faq-item${openFaq===i?" open":""}`}>
-                <div className="faq-q" onClick={()=>setOpenFaq(openFaq===i?null:i)}>
+            {faqs.map((f, i) => (
+              <div key={i} className={`faq-item${openFaq === i ? " open" : ""}`}>
+                <div className="faq-q" onClick={() => setOpenFaq(openFaq === i ? null : i)}>
                   <span className="fq-text">{f.q}</span>
                   <div className="fq-icon">+</div>
                 </div>
@@ -814,13 +907,17 @@ export default function Contact() {
       {/* ── BOTTOM CTA BANNER ── */}
       <div className="cta-banner">
         <div className="cb-left-panel">
-          <span className="cblp-tag">Still Have Questions?</span>
-          <h2 className="cblp-title">Ready to Start <em>Healing Naturally?</em></h2>
-          <p className="cblp-desc">"18+ years of Kalaripayattu mastery — personalized to your unique body, your unique condition, your unique healing journey."</p>
-        </div>
+          <span className="cblp-tag"> Begin Your Wellness Journey</span>
+          <h2 className="cblp-title">
+            Experience the Power of <em>Traditional Healing</em>
+          </h2>
+          <p className="cblp-desc">
+            Discover personalized Ayurvedic care rooted in time-honored wisdom. Whether you're seeking relief from chronic discomfort or looking to improve overall well-being, we're here to guide you every step of the way.
+          </p>        </div>
         <div className="cb-right-panel">
-          <a href="tel:+919876543210" className="btn-w">📞 Call Us Now</a>
-          <a href="mailto:info@everayurlife.com" className="btn-ow">✉️ Send an Email</a>
+          <a href="tel:+919876543210" className="btn-w"> 📞 Book a Consultation</a>
+          <a href="mailto:info@everayurlife.com" className="btn-ow">  ✉️ Contact Our Team
+          </a>
           <span className="cbrp-note">Or scroll up to fill the booking form</span>
         </div>
       </div>
