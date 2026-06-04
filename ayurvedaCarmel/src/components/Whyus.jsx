@@ -266,46 +266,57 @@ const mqItems = ["Why Choose Us","Drug-Free Healing","18+ Years","No Surgery","6
 
 const deepCards = [
   {
-    num:"REASON 01", ico:"🚫",
-    img:"https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=700",
-    title:"100% Drug-Free — Zero Side Effects",
-    desc:"Every transformation at Ever Ayur Life happens through natural intelligence alone. No medicines, no injections, no chemicals. The body knows how to heal — our purpose is to awaken and support that power.",
-    tags:["No Medicines","No Injections","No Side Effects","Natural Intelligence"],
+    num:"REASON 01",
+    ico:"🌿",
+    img:"https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=700",
+    title:"Authentic Kalaripayattu Nadi Marma Healing",
+    desc:"Rooted in Kerala's ancient healing heritage, our therapy combines Kalaripayattu wisdom with precise Marma activation techniques that have been preserved and practiced for generations.",
+    tags:["Traditional Wisdom","Marma Therapy","Kerala Heritage","Authentic Practice"],
   },
+
   {
-    num:"REASON 02", ico:"🔪",
-    img:"https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=700",
-    title:"Surgery Alternative — Proven",
-    desc:"For conditions where surgery is prescribed — knee replacement, disc issues, frozen shoulder — Kalaripayattu Nadi Marma Therapy provides a deeply effective natural path without knives, risk, or long recovery.",
-    tags:["Knee Replacement Alt.","Disc Issues","Frozen Shoulder","No Risk"],
+    num:"REASON 02",
+    ico:"🧬",
+    img:"https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=700",
+    title:"Personalized Nadi Assessment",
+    desc:"Every individual is unique. Through detailed Nadi evaluation and traditional assessment methods, we create a treatment pathway designed specifically for your body's needs and healing potential.",
+    tags:["Nadi Reading","Personalized Care","Individual Plan","Holistic Assessment"],
   },
+
   {
-    num:"REASON 03", ico:"📜",
-    img:"https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=700",
-    title:"18+ Years of Mastered Tradition",
-    desc:"Unni Gurukkal has devoted 18+ years to perfecting the ancient Kalaripayattu Nadi Marma healing tradition — not as a general practice, but with singular, deep mastery that produces consistent, lasting results.",
-    tags:["18+ Years","Deep Mastery","Consistent Results","Kalaripayattu"],
+    num:"REASON 03",
+    ico:"🏆",
+    img:"https://images.unsplash.com/photo-1517841905240-472988babdf9?w=700",
+    title:"18+ Years of Dedicated Expertise",
+    desc:"With nearly two decades devoted exclusively to Kalaripayattu Nadi Marma Therapy, Unni Gurukkal brings deep experience, refined skill, and unwavering commitment to every patient journey.",
+    tags:["18+ Years","Master Practitioner","Deep Experience","Trusted Expertise"],
   },
+
   {
-    num:"REASON 04", ico:"👥",
-    img:"https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=700",
-    title:"6000+ Lives Healed",
-    desc:"Over 6,000 patients across Kerala, Karnataka, Tamil Nadu and beyond — including cases that conventional medicine had declared chronic, irreversible, or only resolvable through surgery.",
-    tags:["6000+ Patients","Pan-India","Untreatable Cases","Documented Results"],
+    num:"REASON 04",
+    ico:"❤️",
+    img:"https://images.unsplash.com/photo-1518611012118-696072aa579a?w=700",
+    title:"6,000+ Healing Journeys",
+    desc:"Thousands of individuals have trusted Ever Ayur Life for support with pain management, mobility improvement, wellness restoration, and overall quality of life enhancement.",
+    tags:["6000+ Patients","Trusted Care","Proven Track Record","Life Transformation"],
   },
+
   {
-    num:"REASON 05", ico:"🧬",
-    img:"https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=700",
-    title:"Fully Personalized Treatment",
-    desc:"Before a single point is touched, Unni Gurukkal reads your Nadi (pulse) — a traditional diagnostic that reveals your constitution and unique imbalances. Every treatment plan is yours alone.",
-    tags:["Nadi Assessment","Individual Protocol","Body Constitution","No Generic Formula"],
+    num:"REASON 05",
+    ico:"⚖️",
+    img:"https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=700",
+    title:"Treating the Root Cause",
+    desc:"Rather than focusing only on symptoms, our approach seeks to identify and address underlying imbalances within the body, supporting long-term wellness and sustainable recovery.",
+    tags:["Root Cause","Long-Term Wellness","Balance","Sustainable Healing"],
   },
+
   {
-    num:"REASON 06", ico:"⚖️",
-    img:"https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=700",
-    title:"Holistic — Body, Mind & Soul",
-    desc:"Physical pain rarely exists in isolation. Ever Ayur Life treats the whole person — Marma for the body, Pranayama for the mind, Kalaripayattu's spiritual tradition for the soul. True healing requires all three.",
-    tags:["Marma Therapy","Pranayama","Yoga","Soul Alignment"],
+    num:"REASON 06",
+    ico:"✨",
+    img:"https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=700",
+    title:"Complete Mind-Body Wellness",
+    desc:"Healing extends beyond physical comfort. Our integrated approach combines Marma therapy, breathing practices, movement traditions, and lifestyle guidance to support overall wellbeing.",
+    tags:["Mind & Body","Pranayama","Holistic Wellness","Lifestyle Balance"],
   },
 ];
 
@@ -368,8 +379,9 @@ export default function WhyUs() {
             <em>Is Real.</em>
           </h1>
           <div className="wh-divider" />
-          <p className="wh-para">"Most treatments manage pain. We eliminate it — at the root, without medicines, without surgery, and without compromise."</p>
-          <div className="wh-badges">
+<p className="wh-para">
+"At Ever Ayur Life, healing is more than symptom relief. Through authentic Kalaripayattu Nadi Marma Therapy, we help restore balance, improve wellbeing, and support the body's natural ability to heal."
+</p>          <div className="wh-badges">
             {["Drug-Free Healing","18+ Years Mastery","Surgery Alternative","6000+ Healed","Fully Personalized"].map((b, i) => (
               <div className="wh-badge" key={i}><span className="wh-badge-dot" />{b}</div>
             ))}
@@ -528,7 +540,7 @@ export default function WhyUs() {
               <span className="proof-tag">The Proof</span>
               <h2 className="proof-title">Results That <em>Speak</em><br/>for Themselves</h2>
               <div className="proof-line" />
-              <p className="proof-desc">"18 years. 6,000 patients. Zero medicines. These are not claims — they are the accumulated results of a lifetime dedicated to one healing tradition, practiced with uncompromising integrity."</p>
+              <p className="proof-desc">"Nearly two decades of dedicated practice, thousands of healing journeys, and a commitment to authentic traditional care. Our work is measured not only in numbers, but in the lives transformed through natural healing."</p>
             </div>
             <div className="proof-quote-side">
               <span className="pq-mark">"</span>
@@ -616,7 +628,7 @@ export default function WhyUs() {
             <div className="cta-text">
               <span className="cta-tag">Take the First Step</span>
               <h2 className="cta-title">Ready to Experience the <em>Difference?</em></h2>
-              <p className="cta-desc">"Book your free Nadi assessment — and discover what 18+ years of Kalaripayattu mastery, personalized entirely to your body, can truly do."</p>
+              <p className="cta-desc">"Begin your healing journey with a personalized Nadi assessment and discover how traditional Kalaripayattu Nadi Marma Therapy can support your wellness, mobility, and quality of life."</p>
               <div className="cta-btns">
                 <a href="/contact" className="btn-white">Book Free Nadi Assessment</a>
                 <a href="/treatment" className="btn-outline-w">Explore Treatments</a>
