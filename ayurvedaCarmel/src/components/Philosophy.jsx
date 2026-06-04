@@ -253,41 +253,96 @@ const mqItems = ["Philosophy","Body · Mind · Soul","Marma Therapy","Kalaripaya
 
 const pillars = [
   {
-    bg:"p-body", overlayClass:"pillar-body-o", flip:false, num:"01",
-    ico:"🌿", tag:"First Pillar",
-    title:<>The <em>Body</em></>,
-    img:"https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=900",
-    desc1:"The body is not merely a physical machine — it is an intelligent system with the innate capacity to heal itself when its energy pathways are clear. In Kalaripayattu tradition, the body holds 107 vital Marma points — junctions of life force that govern every organ, tissue, and system.",
-    desc2:"Marma Therapy precisely activates these points to release blockages, restore prana flow, and reawaken the body's own healing intelligence. Unlike symptomatic treatments, Marma works at the root level — addressing why the body is struggling, not just where it hurts.",
-    quote:"The body speaks in the language of sensation — Marma Therapy listens."
+    bg: "p-body",
+    overlayClass: "pillar-body-o",
+    flip: false,
+    num: "01",
+    ico: "🌿",
+    tag: "First Pillar",
+    title: <>The <em>Body</em></>,
+    img: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=900",
+
+    desc1:
+      "The body is designed to maintain balance and restore itself when given the right support. Physical discomfort, restricted movement, fatigue, and recurring pain often arise when this natural balance is disrupted by stress, injury, lifestyle habits, or accumulated tension.",
+
+    desc2:
+      "At Ever Ayur Life, we focus on understanding the root causes behind physical imbalance. Through traditional Marma Therapy, therapeutic movement, and personalized wellness practices, we help support mobility, circulation, recovery, and long-term physical wellbeing.",
+
+    quote:
+      "Healing begins when the body is given the space and support it needs to restore balance."
   },
+
   {
-    bg:"p-mind", overlayClass:"pillar-mind-o", flip:true, num:"02",
-    ico:"🕊️", tag:"Second Pillar",
-    title:<>The <em>Mind</em></>,
-    img:"https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=900",
-    desc1:"Chronic pain is rarely just physical. The mind amplifies or sustains suffering through stress, anxiety, emotional holding, and unconscious breath patterns. Without addressing the mental dimension, physical treatment can only go so far.",
-    desc2:"Through Pranayama and breathwork, Ever Ayur Life brings the nervous system out of chronic stress activation. Controlled breath directly shifts the body from a state of tension and inflammation into one of restoration, calm, and accelerated healing.",
-    quote:"Still the breath, still the mind — and the body begins to remember how to heal."
+    bg: "p-mind",
+    overlayClass: "pillar-mind-o",
+    flip: true,
+    num: "02",
+    ico: "🕊️",
+    tag: "Second Pillar",
+    title: <>The <em>Mind</em></>,
+    img: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=900",
+
+    desc1:
+      "The mind influences every aspect of health. Daily stress, emotional strain, mental fatigue, and poor sleep can affect the body's ability to recover, regulate itself, and maintain overall wellbeing. Lasting wellness requires caring for both physical and mental health together.",
+
+    desc2:
+      "Through breathwork, mindfulness, and traditional yogic practices, we help create a greater sense of calm, clarity, and resilience. By supporting the nervous system and reducing internal stress, the body is better able to function, recover, and thrive.",
+
+    quote:
+      "A calm and balanced mind creates the foundation for lasting wellbeing."
   },
+
   {
-    bg:"p-soul", overlayClass:"pillar-soul-o", flip:false, num:"03",
-    ico:"✨", tag:"Third Pillar",
-    title:<>The <em>Soul</em></>,
-    img:"https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=900",
-    desc1:"Kalaripayattu is not just a healing system — it is a spiritual tradition. At its heart is the belief that true health is harmony between the individual and the universal life force. Physical and mental healing, without this dimension, remains incomplete.",
-    desc2:"Spiritual alignment in Ever Ayur Life's approach means connecting the patient's healing to a deeper sense of meaning, purpose, and vitality. This dimension of care — rarely found in modern medicine — is what produces transformations that science struggles to explain.",
-    quote:"When the soul is aligned, the body heals in ways medicine cannot predict."
+    bg: "p-soul",
+    overlayClass: "pillar-soul-o",
+    flip: false,
+    num: "03",
+    ico: "✨",
+    tag: "Third Pillar",
+    title: <>The <em>Soul</em></>,
+    img: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=900",
+
+    desc1:
+      "True wellbeing extends beyond the physical body and the thinking mind. Across traditional healing philosophies, health has always been understood as a deeper sense of harmony, purpose, and connection that supports every aspect of life.",
+
+    desc2:
+      "At Ever Ayur Life, we encourage practices that nurture inner balance, self-awareness, and personal growth. When individuals feel more connected to themselves and their journey, healing becomes more meaningful, sustainable, and transformative.",
+
+    quote:
+      "When body, mind, and spirit move in harmony, vitality naturally follows."
   }
 ];
-
 const systemCards = [
-  { n:"01", ico:"🥋", title:"Kalaripayattu Tradition", desc:"The ancient Kerala martial art that is also the world's oldest complete healing system — combining combat, movement, breath, and Marma therapy into one unified science of the body.", tags:["Kerala Heritage","Martial Arts","Healing Science"] },
-  { n:"02", ico:"🌊", title:"Nadi (Pulse) Diagnosis", desc:"Before treatment begins, the healer reads the patient's pulse — a sophisticated diagnostic system that reveals the state of the entire body, its imbalances, and the precise nature of treatment required.", tags:["Traditional Diagnosis","Pulse Reading","Body Constitution"] },
-  { n:"03", ico:"💫", title:"Prana & Energy Flow", desc:"Prana — the vital life force — flows through the body along specific channels. When blocked or imbalanced, disease and pain arise. Marma therapy directly addresses these energetic blockages.", tags:["Life Force","Energy Pathways","107 Marma Points"] },
-  { n:"04", ico:"⚖️", title:"Tridosha Balance", desc:"Ayurvedic philosophy recognizes three doshas — Vata, Pitta, Kapha — whose imbalance underlies all disease. Treatment at Ever Ayur Life is calibrated to restore each patient's unique doshic balance.", tags:["Vata","Pitta","Kapha"] },
-  { n:"05", ico:"🧘", title:"Yoga as Medicine", desc:"Yoga in the Kalaripayattu tradition is not exercise — it is medicine. Prescribed postures and sequences are individually calibrated to restore structural balance and stimulate specific healing pathways.", tags:["Therapeutic Yoga","Body Alignment","Healing Sequences"] },
-  { n:"06", ico:"💨", title:"Pranayama Science", desc:"Breath is the bridge between body and mind. The ancient science of Pranayama uses controlled breathing patterns to directly regulate the nervous system, reduce inflammation, and accelerate cellular healing.", tags:["Breathwork","Nervous System","Cellular Healing"] },
+  { n:"01", ico:"🥋",title:"Kalaripayattu Heritage",
+
+desc:"Originating in Kerala, Kalaripayattu is a traditional discipline that integrates movement, body awareness, breath, and therapeutic knowledge. Its healing practices continue to influence holistic wellness approaches today.",
+
+tags:["Kerala Tradition","Movement","Holistic Wellness"] },
+  { n:"02", ico:"🌊", title:"Nadi Assessment",
+
+desc:"Traditional pulse assessment offers insights into patterns of balance and imbalance within the body. It helps guide a personalized wellness approach tailored to the individual.",
+
+tags:["Personalized Care","Pulse Reading","Ayurvedic Insight"] },
+  { n:"03", ico:"💫", title:"Marma Therapy",
+
+desc:"Marma points are considered vital intersections within the body. Gentle and precise stimulation of these points is traditionally used to support relaxation, circulation, and overall wellbeing.",
+
+tags:["Vital Points","Therapeutic Touch","Natural Balance"] },
+  { n:"04", ico:"⚖️", title:"Ayurvedic Principles",
+
+desc:"Ayurveda recognizes that every individual is unique. Understanding constitutional tendencies helps create wellness plans that support long-term balance and vitality.",
+
+tags:["Personalized Wellness","Balance","Ayurveda"] },
+  { n:"05", ico:"🧘", title:"Therapeutic Yoga",
+
+desc:"Thoughtfully selected postures and movements help improve flexibility, posture, strength, and body awareness while supporting recovery and overall health.",
+
+tags:["Movement Therapy","Mobility","Strength"] },
+  { n:"06", ico:"💨", title:"Breath & Nervous System Health",
+
+desc:"Traditional breathing practices can help reduce stress, improve focus, and support nervous system regulation, creating a foundation for better overall wellbeing.",
+
+tags:["Breathwork","Relaxation","Mind-Body Balance"] },
 ];
 
 const nadiSteps = [
@@ -298,12 +353,32 @@ const nadiSteps = [
 ];
 
 const values = [
-  { ico:"🌿", title:"Naturopathy", desc:"Healing through nature's own intelligence, never against it." },
-  { ico:"🚫", title:"Non-Invasive", desc:"No needles, no knives, no medicines — pure touch and breath." },
-  { ico:"🎯", title:"Root-Cause Focus", desc:"We treat why the body struggles, not just where it hurts." },
-  { ico:"🧬", title:"Individuality", desc:"Every person's constitution is unique — every treatment must be too." },
-  { ico:"📖", title:"Ancient Lineage", desc:"Carrying forward 5,000 years of unbroken healing knowledge." },
-];
+{
+ ico:"🌿",
+ title:"Natural Healing",
+ desc:"Supporting the body's own capacity for balance and recovery."
+},
+{
+ ico:"🤝",
+ title:"Personalized Care",
+ desc:"Every individual receives attention tailored to their unique needs."
+},
+{
+ ico:"🎯",
+ title:"Root-Cause Focus",
+ desc:"Seeking deeper patterns rather than only addressing symptoms."
+},
+{
+ ico:"🧘",
+ title:"Holistic Wellness",
+ desc:"Caring for physical, mental, and emotional wellbeing together."
+},
+{
+ ico:"📜",
+ title:"Traditional Wisdom",
+ desc:"Honoring generations of healing knowledge while serving modern lifestyles."
+}
+]
 
 export default function Philosophy() {
   return (
@@ -325,14 +400,17 @@ export default function Philosophy() {
         <div className="ph-ring1"/><div className="ph-ring2"/><div className="ph-ring3"/>
         <div className="ph-center">
           <div className="ph-emblem">🌿</div>
-          <span className="ph-tag">Our Philosophy</span>
+          <span className="ph-tag">The Ever Ayur Life Philosophy</span>
           <h1 className="ph-title">
-            Body. Mind.
-            <em>Soul.</em>
+             Healing Beyond
+            <em>Symptoms</em>
           </h1>
           <div className="ph-line" style={{width:"200px"}}/>
-          <p className="ph-sub">"True healing is not the absence of disease — it is the restoration of harmony between body, mind, and soul."</p>
-        </div>
+<p className="ph-sub">
+  At Ever Ayur Life, healing is not simply about relieving pain.
+  It is about restoring balance within the body, calming the mind,
+  and reconnecting with the vitality that allows true wellbeing to flourish.
+</p>        </div>
         <div className="ph-scroll">
           <span className="ph-scroll-lbl">Scroll</span>
           <div className="ph-scroll-line"/>
@@ -368,8 +446,9 @@ export default function Philosophy() {
         <div className="sys-bg-ring1"/><div className="sys-bg-ring2"/>
         <div className="sys-inner">
           <div className="sys-header">
-            <span className="sys-tag">The Ancient Science</span>
-            <h2 className="sys-title">Kalaripayattu — A Complete <em>Healing System</em></h2>
+            <span className="sys-tag">Traditional Wisdom, Modern Relevance</span>
+            <h2 className="sys-title">  The Foundations of
+  <em>Holistic Healing</em></h2>
             <div className="sys-line"/>
           </div>
           <div className="sys-wheel">
@@ -422,11 +501,25 @@ export default function Philosophy() {
             <p className="marma-desc">When Marma points become blocked — through injury, stress, poor posture, or disease — pain, stiffness, and dysfunction arise. Activating these points with precise, trained touch releases the blockage and allows the body's natural healing intelligence to flow freely.</p>
             <div className="marma-points">
               {[
-                {n:"107",text:<><strong>Vital energy points</strong> mapped by Kalaripayattu masters across thousands of years of observation</>},
-                {n:"3",text:<><strong>Categories of Marma</strong> — muscular, vascular, and neural — each requiring different activation techniques</>},
-                {n:"0",text:<><strong>Medicines required</strong> — healing occurs entirely through the activation of the body's own intelligence</>},
-                {n:"18+",text:<><strong>Years of mastery</strong> refining the precise touch and depth required for each of the 107 points</>},
-              ].map((m,i)=>(
+               {
+ n:"107",
+ text:<><strong>Traditional Marma points</strong> identified in classical Ayurvedic and Kalaripayattu teachings</>
+},
+
+{
+ n:"1",
+ text:<><strong>Personalized approach</strong> tailored to the unique needs and condition of every individual</>
+},
+
+{
+ n:"100%",
+ text:<><strong>Hands-on therapy</strong> focused on natural, non-invasive wellness support</>
+}
+,
+{
+ n:"18+",
+ text:<><strong>Years of experience</strong> dedicated to traditional healing practices and patient care</>
+}   ].map((m,i)=>(
                 <div className="mp-item" key={i}>
                   <div className="mp-num">{m.n}</div>
                   <div className="mp-text">{m.text}</div>
@@ -453,8 +546,10 @@ export default function Philosophy() {
               <span className="nadi-tag">Before Treatment Begins</span>
               <h2 className="nadi-title">The Art of <em>Nadi</em><br/>Pulse Diagnosis</h2>
               <div className="nadi-div"/>
-              <p className="nadi-desc">Before a single Marma point is touched, Unni Gurukkal reads the patient's Nadi — the pulse. This ancient diagnostic art, refined over thousands of years, reveals far more than modern pulse measurement: it reads the state of every organ system, the patient's doshic constitution, and the precise imbalances that need to be addressed.</p>
-              <p className="nadi-desc">This is why no two patients at Ever Ayur Life receive the same treatment — even if they have the same diagnosis. The Nadi never lies.</p>
+              <p className="nadi-desc">Before any treatment begins, understanding the individual comes first.
+
+Nadi Assessment, or traditional pulse reading, is used as part of a holistic evaluation process. Combined with consultation and observation, it helps create a wellness plan that reflects each person's unique constitution, lifestyle, and health goals.</p>
+              <p className="nadi-desc">Rather than applying the same approach to everyone, each recommendation is carefully adapted to the individual. This personalized process is at the heart of the Ever Ayur Life experience.</p>
               <div className="nadi-steps">
                 {nadiSteps.map((s,i)=>(
                   <div className="ns-item" key={i}>
@@ -493,7 +588,7 @@ export default function Philosophy() {
         <div className="qf-ring"/>
         <div className="qf-inner">
           <span className="qf-mark">"</span>
-          <p className="qf-text">The body has the power to heal itself. The purpose of treatment is not to force that healing — it is to remove every obstacle that stands in its way, and then to step back and watch the body do what it was always designed to do.</p>
+          <p className="qf-text">"The goal of healing is not merely to remove discomfort. It is to create balance, restore vitality, and help each individual experience a greater sense of wellbeing in everyday life."</p>
           <div className="qf-attr">
             <div className="qf-line"/>
             <span className="qf-name">Unni Gurukkal · Ever Ayur Life</span>
@@ -507,13 +602,14 @@ export default function Philosophy() {
         <div className="cta-inner">
           <div className="cta-bar">
             <div className="cta-left">
-              <span className="cta-tag">Experience the Philosophy</span>
-              <h2 className="cta-title">Ready to Begin Your <em>Healing Journey?</em></h2>
-              <p className="cta-desc">"Book your free Nadi assessment today — and experience what 18+ years of Kalaripayattu mastery, personalized to your body, can do."</p>
+              <span className="cta-tag">Begin Your Wellness Journey</span>
+              <h2 className="cta-title">Ready to Experience
+<em>Personalized Healing?</em></h2>
+              <p className="cta-desc">"Schedule a consultation and discover how traditional Ayurvedic wisdom, Marma Therapy, and individualized care can support your path to better health and wellbeing."</p>
             </div>
             <div className="cta-btns">
-              <a href="/contact" className="btn-white">Book Free Nadi Assessment</a>
-              <a href="/treatment" className="btn-outline-w">Explore Treatments</a>
+              <a href="/contact" className="btn-white">Book a Consultation</a>
+              <a href="/treatment" className="btn-outline-w">Explore Our Therapies</a>
             </div>
           </div>
         </div>
