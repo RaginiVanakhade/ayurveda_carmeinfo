@@ -386,34 +386,79 @@ export default function Home() {
         <div className="hero-bg-circle" />
         <div className="hero-bg-ring" />
         <div className="hero-inner">
-          <div className="hero-text">
-            <div className="hero-badge"><span className="hero-badge-dot" />Kalaripayattu Nadi Marma · Kerala</div>
-            <p className="hero-eyebrow">Welcome to</p>
-            <h1><em>Ayurvedic</em> Healing<br />for Body, Mind &amp; Soul</h1>
-            <p className="hero-desc">"When the body feels pain, true healing comes when body, mind, and soul are restored together."</p>
-            <div className="hero-btns">
-              <a href="/contact" className="btn-green">Book a Free Consultation</a>
-              <a href="/treatment" className="btn-ghost">Explore Treatments</a>
-            </div>
-            <div className="hero-trust">
-              {[{icon:"🌿",num:"18+",label:"Years of Mastery"},{icon:"👥",num:"6000+",label:"Patients Healed"},{icon:"🚫",num:"0",label:"Medicines Used"}].map((t,i)=>(
-                <div className="trust-item" key={i}>
-                  <div className="trust-icon">{t.icon}</div>
-                  <div><div className="trust-num">{t.num}</div><div className="trust-label">{t.label}</div></div>
-                </div>
-              ))}
-            </div>
-          </div>
+         <div className="hero-text">
+  <div className="hero-badge">
+    <span className="hero-badge-dot" />
+    Traditional Kalari Nadi Marma Therapy
+  </div>
+
+  <p className="hero-eyebrow">Welcome to</p>
+
+  <h1>
+    <em>Kalari Nadi</em> Marma Therapy
+  </h1>
+
+  <p className="hero-desc">
+    Experience the ancient healing wisdom of Ayurveda combined with
+    traditional Kalaripayattu therapeutic practices. Restore balance to
+    your body, mind, and energy system through specialized marma point
+    therapy, herbal oil treatments, muscle alignment techniques, and
+    natural healing methods passed down through generations.
+  </p>
+
+  <div className="hero-btns">
+    <a href="/contact" className="btn-green">
+      Book Your Consultation
+    </a>
+
+    <a href="/treatment" className="btn-ghost">
+      Explore Therapies
+    </a>
+  </div>
+
+  <div className="hero-trust">
+    {[
+      {
+        icon: "🌿",
+        num: "100%",
+        label: "Natural Healing",
+      },
+      {
+        icon: "💆",
+        num: "4+",
+        label: "Specialized Therapies",
+      },
+      {
+        icon: "✨",
+        num: "1",
+        label: "Holistic Wellness Goal",
+      },
+    ].map((t, i) => (
+      <div className="trust-item" key={i}>
+        <div className="trust-icon">{t.icon}</div>
+        <div>
+          <div className="trust-num">{t.num}</div>
+          <div className="trust-label">{t.label}</div>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
           <div className="hero-visual">
             <img className="hero-img-main" src="https://png.pngtree.com/png-vector/20250405/ourmid/pngtree-a-mix-of-cinnamon-dried-ginger-black-cardamom-javitri-long-pepper-png-image_15928176.png" alt="Ayurvedic herbs" />
-            <div className="hero-float-1">
-              <span className="float-icon">🌿</span>
-              <div><div className="float-big">Drug-Free</div><div className="float-small">100% Natural Treatment</div></div>
-            </div>
-            <div className="hero-float-2">
-              <div className="f2-num">6000+</div>
-              <div className="f2-label">Lives Healed</div>
-            </div>
+          <div className="hero-float-1">
+  <span className="float-icon">🌿</span>
+  <div>
+    <div className="float-big">Natural Healing</div>
+    <div className="float-small">
+      Traditional Marma Therapy
+    </div>
+  </div>
+</div>
+           <div className="hero-float-2">
+  <div className="f2-num">100%</div>
+  <div className="f2-label">Holistic Wellness</div>
+</div>
           </div>
         </div>
       </section>
