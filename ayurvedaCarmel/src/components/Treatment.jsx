@@ -253,46 +253,97 @@ const mqItems = ["Treatments","Marma Therapy","Drug-Free Healing","Pain Care","J
 
 const treatCards = [
   {
-    cat:"Pain Care", num:"6 conditions", ico:"🦴",
-    img:"https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=700",
-    title:"Pain & Musculoskeletal Care",
-    desc:"Chronic and acute pain conditions rooted in structural imbalance, nerve tension, or muscular dysfunction — addressed at the source through precise Marma activation.",
-    pills:["Chronic & Acute Body Pain","Neck Pain / Cervical Spondylosis","Frozen Shoulder","Back Pain / Spine Issues","Hip Pain / Arm Pain","Compression Fracture"],
+    cat: "Pain Care",
+    num: "8+ Conditions",
+    ico: "🦴",
+    img: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=700",
+    title: "Pain & Musculoskeletal Disorders",
+    desc: "Chronic pain often arises from deep imbalances within muscles, joints, nerves, and connective tissues. Our Nadi Marma treatments focus on restoring mobility, reducing discomfort, and addressing the root cause naturally.",
+    pills: [
+      "Neck Pain",
+      "Back Pain",
+      "Frozen Shoulder",
+      "Cervical Spondylosis",
+      "Hip Pain",
+      "Arm Pain",
+      "Sciatica",
+      "Muscle Stiffness"
+    ],
   },
   {
-    cat:"Joint Health", num:"5 conditions", ico:"🦵",
-    img:"https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=700",
-    title:"Degenerative Conditions",
-    desc:"Progressive joint and bone degeneration — conditions often deemed irreversible — restored through energy reactivation and structured natural therapy.",
-    pills:["Osteoarthritis","Osteoporosis","Rheumatoid Arthritis","Joint Pain & Stiffness","Walking Imbalance"],
+    cat: "Joint Health",
+    num: "6+ Conditions",
+    ico: "🦵",
+    img: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=700",
+    title: "Joint & Degenerative Conditions",
+    desc: "Degenerative joint disorders can affect mobility and quality of life. Through Marma Therapy, Yoga, and corrective healing practices, we help support joint function and natural movement.",
+    pills: [
+      "Osteoarthritis",
+      "Rheumatoid Arthritis",
+      "Osteoporosis",
+      "Joint Stiffness",
+      "Knee Pain",
+      "Mobility Issues"
+    ],
   },
   {
-    cat:"Neurology", num:"4 conditions", ico:"🧠",
-    img:"https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=700",
-    title:"Nerve & Neurological Disorders",
-    desc:"Nerve compression, neurological degeneration, and post-stroke recovery — Marma therapy's documented impact on neurological pathways makes these highly treatable.",
-    pills:["Nerve Compression Issues","Carpal Tunnel Syndrome","Parkinson's Disease","Stroke / Hemiplegia"],
+    cat: "Neurology",
+    num: "5+ Conditions",
+    ico: "🧠",
+    img: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=700",
+    title: "Neurological & Nerve Disorders",
+    desc: "The nervous system governs every movement and sensation in the body. Our therapies are designed to support nerve function, circulation, and neurological wellbeing.",
+    pills: [
+      "Nerve Compression",
+      "Carpal Tunnel Syndrome",
+      "Parkinson's Support",
+      "Stroke Recovery Support",
+      "Hemiplegia"
+    ],
   },
   {
-    cat:"Women's Health", num:"3 conditions", ico:"🌸",
-    img:"https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=700",
-    title:"Women's Health & Hormonal Wellness",
-    desc:"Hormonal and menstrual imbalances treated through targeted Marma points that directly regulate the endocrine system and restore natural cycle rhythm.",
-    pills:["Menstrual Disorders","Painful Periods","Irregular Bleeding"],
+    cat: "Women's Health",
+    num: "4+ Conditions",
+    ico: "🌸",
+    img: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=700",
+    title: "Women's Wellness",
+    desc: "Women's health concerns often involve hormonal, physical, and emotional factors. Our holistic treatment approach supports balance and overall wellbeing.",
+    pills: [
+      "Menstrual Discomfort",
+      "Irregular Cycles",
+      "Hormonal Imbalance",
+      "Pelvic Health"
+    ],
   },
   {
-    cat:"General Health", num:"6 conditions", ico:"💚",
-    img:"https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=700",
-    title:"General Health Conditions",
-    desc:"Everyday conditions that erode quality of life — from persistent migraines to age-related weakness — resolved through holistic constitutional treatment.",
-    pills:["Headache / Migraine","Burning Sensation","Limb Pain (Hands & Legs)","Age-related Weakness","Difficulty in Walking","Knee Pain & Swelling"],
+    cat: "General Wellness",
+    num: "10+ Conditions",
+    ico: "💚",
+    img: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=700",
+    title: "General Health & Wellness",
+    desc: "Many everyday health concerns can impact comfort, energy, and vitality. Our treatments focus on restoring balance throughout the body and supporting long-term wellness.",
+    pills: [
+      "Migraine",
+      "Headaches",
+      "Burning Sensation",
+      "Limb Pain",
+      "Walking Difficulty",
+      "Knee Swelling"
+    ],
   },
   {
-    cat:"Mind & Vitality", num:"2 conditions", ico:"🌿",
-    img:"https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=700",
-    title:"Vitality & Mental Wellness",
-    desc:"Depression and erectile dysfunction — conditions with deep psycho-physical roots — treated through the combined power of Marma, Pranayama, and Yoga.",
-    pills:["Erectile Dysfunction","Depression"],
+    cat: "Vitality",
+    num: "Mind & Body",
+    ico: "🌿",
+    img: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=700",
+    title: "Mental Wellbeing & Vitality",
+    desc: "Physical health and emotional wellbeing are deeply connected. Marma Therapy, Yoga, and Pranayama work together to support balance, clarity, and vitality.",
+    pills: [
+      "Stress Management",
+      "Low Energy",
+      "Emotional Wellbeing",
+      "Lifestyle Balance"
+    ],
   },
 ];
 
@@ -340,11 +391,11 @@ const testimonials = [
 ];
 
 const surgeryAlts = [
-  { ico:"🦴", text:"Severe Back Pain — Disc Issues" },
-  { ico:"🦵", text:"Knee Replacement Cases" },
-  { ico:"💪", text:"Frozen Shoulder & Neck Immobility" },
-  { ico:"🧠", text:"Spinal Cord Compression" },
-  { ico:"⚡", text:"Nerve Compression Disorders" },
+  { ico: "🦴", text: "Persistent Back & Spine Conditions" },
+  { ico: "🦵", text: "Chronic Knee & Joint Problems" },
+  { ico: "💪", text: "Frozen Shoulder & Restricted Mobility" },
+  { ico: "🧠", text: "Neurological Rehabilitation Support" },
+  { ico: "⚡", text: "Nerve Compression Disorders" },
 ];
 
 export default function Treatment() {
@@ -368,13 +419,17 @@ export default function Treatment() {
         <div className="th-inner">
           <div className="th-text">
             <span className="th-eyebrow">Kalaripayattu Nadi Marma · Kerala</span>
-            <h1 className="th-title">
-              Our Treatments
-              <em>Heal Without Medicine.</em>
-            </h1>
+           <h1 className="th-title">
+  Treatments That
+  <em>Address The Root Cause</em>
+</h1>
             <div className="th-line" />
-            <p className="th-desc">"When the body feels pain, true healing comes from treatments that restore body, mind, and soul together — without a single medicine."</p>
-            <div className="th-badges">
+<p className="th-desc">
+  Through the ancient science of Nadi Marma Therapy, combined with
+  therapeutic Yoga and Pranayama, we help restore balance, mobility,
+  and vitality naturally. Every treatment plan is personalized to
+  support your body's innate healing intelligence.
+</p>            <div className="th-badges">
               {["Drug-Free Healing","18+ Years Mastery","6000+ Healed","No Surgery","107 Marma Points"].map((b, i) => (
                 <div className="th-badge" key={i}><span className="th-badge-dot" />{b}</div>
               ))}
@@ -447,10 +502,17 @@ export default function Treatment() {
         <div className="special-inner">
           <div>
             <span className="sp-tag">Special Focus</span>
-            <h2 className="sp-title">When Surgery Is<br/><em>Not the Answer</em></h2>
+          <h2 className="sp-title">
+  Holistic Care For
+  <em>Complex Conditions</em>
+</h2>
             <div className="sp-line" />
-            <p className="sp-desc">"For conditions where people are told surgery is the only option — Ever Ayur Life offers a proven, natural alternative. Marma therapy restores what surgery cannot: the body's own healing intelligence."</p>
-            <div className="sp-items">
+<p className="sp-desc">
+  Our approach goes beyond symptom management. By combining
+  traditional Marma Therapy with therapeutic movement and breathwork,
+  we support recovery, improve function, and help patients regain
+  confidence in their daily lives.
+</p>            <div className="sp-items">
               {surgeryAlts.map((s, i) => (
                 <div className="sp-item" key={i}>
                   <div className="sp-bullet">{s.ico}</div>
@@ -581,10 +643,16 @@ export default function Treatment() {
           <div className="cta-card">
             <div className="cta-text">
               <span className="cta-tag">Begin Your Healing</span>
-              <h2 className="cta-title">Ready to Heal <em>Naturally?</em></h2>
-              <p className="cta-desc">"Book your free Nadi assessment and experience 18+ years of Kalaripayattu mastery, personalized to your body and condition."</p>
-              <div className="cta-btns">
-                <a href="/contact" className="btn-white">Book Free Nadi Assessment</a>
+             <h2 className="cta-title">
+  Begin Your
+  <em>Healing Journey</em>
+</h2>
+<p className="cta-desc">
+  Discover a personalized approach to wellness through Nadi Marma
+  Therapy, Therapeutic Yoga, and Pranayama. Let us help you restore
+  balance, mobility, and vitality naturally.
+</p>              <div className="cta-btns">
+                <a href="/contact" className="btn-white">  Book A Consultation</a>
                 <a href="/about" className="btn-outline-w">About Our Healer</a>
               </div>
             </div>
