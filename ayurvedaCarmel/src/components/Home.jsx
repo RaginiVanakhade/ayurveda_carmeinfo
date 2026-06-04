@@ -338,42 +338,155 @@ const CSS = `
   }
 `;
 const features = [
-  { icon:"🚫", title:"Drug-Free Treatment", desc:"Complete healing without any medicines or chemicals." },
-  { icon:"✋", title:"Marma Therapy", desc:"Activating 107 vital energy points for natural recovery." },
-  { icon:"🧘", title:"Yoga & Pranayama", desc:"Breath and movement science in every session." },
-  { icon:"🏅", title:"18+ Years Experience", desc:"Trusted by 6000+ patients across Kerala and beyond." },
+  {
+    icon: "🌿",
+    title: "Pain Management",
+    desc: "Natural therapies designed to help relieve chronic and acute body pain."
+  },
+  {
+    icon: "🧠",
+    title: "Nerve Rejuvenation",
+    desc: "Therapeutic techniques that support healthy nerve function and recovery."
+  },
+  {
+    icon: "😌",
+    title: "Stress Relief",
+    desc: "Relaxation therapies that help restore mental calmness and emotional balance."
+  },
+  {
+    icon: "💪",
+    title: "Physical Recovery",
+    desc: "Support for mobility, flexibility, rehabilitation, and overall wellness."
+  }
 ];
 const treatments = [
-  { cat:"Pain Care", title:"Chronic Pain & Spine", img:"https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600", tags:["Back Pain","Neck Pain","Frozen Shoulder","Disc Issues"] },
-  { cat:"Joint Health", title:"Arthritis & Degenerative", img:"https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=600", tags:["Osteoarthritis","Rheumatoid Arthritis","Joint Stiffness"] },
-  { cat:"Neurology", title:"Nerve & Brain Disorders", img:"https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600", tags:["Parkinson's","Stroke / Hemiplegia","Carpal Tunnel"] },
-  { cat:"Women's Health", title:"Hormonal Wellness", img:"https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600", tags:["Menstrual Disorders","Irregular Cycles","Painful Periods"] },
-  { cat:"Vitality", title:"Fatigue & General Health", img:"https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600", tags:["Migraine","Knee Pain","Age Weakness"] },
-  { cat:"Surgery Alternative", title:"Avoid Surgery Naturally", img:"https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600", tags:["Knee Replacement Alt.","Shoulder Immobility","Disc Issues"] },
+  {
+    cat: "Pain Relief",
+    title: "Pain Relief Therapy",
+    img: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=600",
+    tags: ["Back Pain","Neck Pain","Shoulder Stiffness","Knee Pain","Joint Pain","Sciatica"]
+  },
+  {
+    cat: "Recovery",
+    title: "Sports Injury & Rehabilitation",
+    img: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=600",
+    tags: ["Muscle Strain","Ligament Injury","Body Stiffness","Flexibility","Recovery"]
+  },
+  {
+    cat: "Wellness",
+    title: "Stress & Wellness Therapy",
+    img: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600",
+    tags: ["Stress Relief","Better Sleep","Mental Relaxation","Energy Balance"]
+  },
+  {
+    cat: "Rejuvenation",
+    title: "Rejuvenation Therapy",
+    img: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600",
+    tags: ["Herbal Oils","Vitality","Circulation","Body Revitalization"]
+  },
+  {
+    cat: "Nerve Care",
+    title: "Nerve Support Therapy",
+    img: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600",
+    tags: ["Nerve Recovery","Mobility","Body Balance","Coordination"]
+  },
+  {
+    cat: "Holistic Care",
+    title: "Holistic Wellness Therapy",
+    img: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600",
+    tags: ["Natural Healing","Mind-Body Balance","Wellness","Energy Restoration"]
+  }
 ];
 const philCards = [
-  { icon:"🌿", title:"Body", desc:"Physical restoration through precise Marma point activation — releasing blockages and reawakening the body's self-healing intelligence." },
-  { icon:"🕊️", title:"Mind", desc:"Mental peace through Pranayama and breathwork — dissolving anxiety, stress, and the mental patterns that sustain physical pain." },
-  { icon:"✨", title:"Soul", desc:"Spiritual alignment rooted in Kerala's Kalaripayattu tradition — restoring the vital life force that modern medicine cannot measure." },
+  {
+    icon: "🌿",
+    title: "Body Wellness",
+    desc: "Support healthy muscles, joints, flexibility, and circulation through traditional therapeutic techniques."
+  },
+  {
+    icon: "✨",
+    title: "Energy Balance",
+    desc: "Stimulate vital energy pathways and marma points to encourage natural healing and restoration."
+  },
+  {
+    icon: "🕊️",
+    title: "Mind Relaxation",
+    desc: "Promote stress relief, calmness, and overall mental well-being through holistic wellness practices."
+  }
 ];
 const steps = [
-  { n:"01", title:"Nadi Assessment", desc:"Traditional pulse diagnosis to understand your unique body constitution." },
-  { n:"02", title:"Marma Activation", desc:"Precise stimulation of vital energy points to unblock prana flow." },
-  { n:"03", title:"Yoga & Movement", desc:"Prescribed sequences for flexibility, strength, and structural balance." },
-  { n:"04", title:"Pranayama", desc:"Breathing protocols that accelerate healing and restore inner vitality." },
+  {
+    n: "01",
+    title: "Consultation",
+    desc: "Understand your health concerns and wellness goals."
+  },
+  {
+    n: "02",
+    title: "Assessment",
+    desc: "Evaluate body condition, energy balance, and therapy requirements."
+  },
+  {
+    n: "03",
+    title: "Therapy Session",
+    desc: "Apply specialized marma techniques and herbal therapies."
+  },
+  {
+    n: "04",
+    title: "Recovery & Wellness",
+    desc: "Support long-term health, flexibility, and overall vitality."
+  }
 ];
 const whyCards = [
-  { icon:"🚫", title:"100% Drug-Free", desc:"Zero medicines, zero side effects — healing through natural intelligence only." },
-  { icon:"🔪", title:"Surgery Alternative", desc:"For conditions where surgery is prescribed, Marma therapy offers a proven natural path." },
-  { icon:"📜", title:"18+ Years Mastery", desc:"Decades perfecting ancient Kalaripayattu Nadi Marma with consistent results." },
-  { icon:"👥", title:"6000+ Healed", desc:"Proven outcomes across arthritis, neurological disorders, chronic pain and more." },
-  { icon:"🧬", title:"Personalized Care", desc:"Treatment plans individually crafted based on deep traditional assessment." },
-  { icon:"🌱", title:"Holistic Tradition", desc:"Rooted in Kerala's Kalari system — physical therapy, yoga, and breath as one." },
+  {
+    icon: "🌿",
+    title: "Traditional Healing",
+    desc: "Authentic therapy methods inspired by generations of healing wisdom."
+  },
+  {
+    icon: "👤",
+    title: "Personalized Sessions",
+    desc: "Every treatment plan is customized according to individual wellness requirements."
+  },
+  {
+    icon: "🪔",
+    title: "Natural Herbal Therapies",
+    desc: "Traditional techniques combined with herbal oil therapies."
+  },
+  {
+    icon: "✨",
+    title: "Holistic Wellness",
+    desc: "Care designed to support both physical and mental well-being."
+  },
+  {
+    icon: "🏆",
+    title: "Experienced Care",
+    desc: "Guided by trained professionals experienced in traditional wellness therapies."
+  },
+  {
+    icon: "🧘",
+    title: "Healing Environment",
+    desc: "A peaceful atmosphere designed to encourage relaxation and recovery."
+  }
 ];
 const testimonials = [
-  { init:"R", name:"Ramesh Nair", role:"Severe Back Pain · Kochi", text:"After 6 years of chronic back pain and being advised surgery, 3 months of Marma therapy changed everything. I walk freely and live without pain." },
-  { init:"S", name:"Sunitha Pillai", role:"Rheumatoid Arthritis · Thrissur", text:"I was dependent on painkillers every single day. After 8 weeks of treatment I am completely medicine-free. Results beyond anything I imagined." },
-  { init:"A", name:"Arun Kumar", role:"Parkinson's Disease · Bangalore", text:"The tremors have reduced significantly. Unni Gurukkal's expertise in neurological Marma therapy is truly extraordinary. My family is grateful." },
+  {
+    init: "1",
+    name: "Pain Relief",
+    role: "Therapy Benefit",
+    text: "Helps reduce body pain and stiffness while supporting natural mobility and flexibility."
+  },
+  {
+    init: "2",
+    name: "Body Rejuvenation",
+    role: "Therapy Benefit",
+    text: "Promotes relaxation, improved circulation, flexibility, and overall wellness."
+  },
+  {
+    init: "3",
+    name: "Stress Relief",
+    role: "Therapy Benefit",
+    text: "Encourages mental calmness, recovery, and balanced well-being."
+  }
 ];
  import Random from "../components/Random"
 export default function Home() {
@@ -485,8 +598,8 @@ export default function Home() {
               <div className="about-badge"><div className="ab-num">18+</div><div className="ab-label">Years of Healing</div></div>
             </div>
             <div>
-              <span className="stag">About Ever Ayur Life</span>
-              <h2 className="stitle">Ancient Kerala Wisdom<br />for <em>Modern Healing</em></h2>
+              <span className="stag">About Kalari Nadi Marma Therapy</span>
+              <h2 className="stitle">Ancient Healing Wisdom<br />for <em> Modern Wellness</em></h2>
               <div className="gline" />
               <blockquote className="about-quote">"The body has the power to heal itself — the purpose of treatment is to awaken that power."</blockquote>
               <p className="about-desc">At Ever Ayur Life, we practice <strong>Kalaripayattu Nadi Marma Therapy</strong> — Kerala's sacred healing tradition that activates the body's 107 vital energy points to restore natural balance and eliminate pain.</p>
@@ -568,7 +681,12 @@ export default function Home() {
               <p className="healer-desc">With 18+ years of dedicated practice, Unni Gurukkal has mastered Kerala's ancient healing arts, transforming 6,000+ lives across conditions that conventional medicine had declared untreatable.</p>
               <p className="healer-desc">Each patient receives individualized attention through traditional Nadi (pulse) diagnosis, with treatment plans uniquely crafted for their constitution and condition.</p>
               <div className="h-stats">
-                {[{num:"18+",lbl:"Years Exp."},{num:"6000+",lbl:"Patients"},{num:"100%",lbl:"Drug-Free"},{num:"0",lbl:"Medicines"}].map((s,i)=>(
+                {[
+  { num:"100%", lbl:"Natural Care" },
+  { num:"4+", lbl:"Therapies" },
+  { num:"1", lbl:"Wellness Goal" },
+  { num:"∞", lbl:"Care & Support" }
+].map((s,i)=>(
                   <div className="h-stat" key={i}><div className="h-num">{s.num}</div><div className="h-lbl">{s.lbl}</div></div>
                 ))}
               </div>
