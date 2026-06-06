@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import ayurvedaLogo from "../assets/ayurvedaLogo.jpeg"
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -65,9 +66,18 @@ const Navbar = () => {
         }
 
         /* LOGO */
-        .eal-logo {
-          text-decoration: none;
-        }
+      .eal-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.eal-logo img {
+  height: 64px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
 
         .eal-title {
           font-family: 'Cinzel', serif;
@@ -210,17 +220,24 @@ const Navbar = () => {
           .eal-links, .eal-book, .eal-vr { display: none; }
           .eal-ham { display: flex; }
         }
+
+        @media (max-width: 768px) {
+  .eal-logo img {
+    height: 45px;
+  }
+}
       `}</style>
 
       <nav className="eal-navbar">
         <div className="eal-inner">
 
           <NavLink to="/" className="eal-logo">
-            <div>
-              <div className="eal-title">Ever <em>Ayur</em> Life</div>
-              <div className="eal-tagline">Kalari Nadi Marma Therapy</div>
-            </div>
-          </NavLink>
+  <img
+    src={ayurvedaLogo}
+    alt="Ever Ayur Life"
+    className="eal-logo-img"
+  />
+</NavLink>
 
           <div className="eal-vr" />
 
