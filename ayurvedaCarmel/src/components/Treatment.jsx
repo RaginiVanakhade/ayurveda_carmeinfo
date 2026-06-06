@@ -631,7 +631,7 @@ export default function Treatment() {
           <p className="qs-text">Treatment here is not just therapy — it feels like returning to a new life. After years of chronic pain and failed treatments, Ever Ayur Life gave me my freedom back without a single medicine.</p>
           <div className="qs-attr">
             <div className="qs-line" />
-            <span className="qs-name">Patient · Ever Ayur Life · Thiruvananthapuram</span>
+            <span className="qs-name">Patient · Ever Ayur Life ·  Malappuram, Edappal, Kerala, India</span>
             <div className="qs-line" />
           </div>
         </div>

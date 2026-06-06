@@ -547,7 +547,7 @@ export default function WhyUs() {
               <p className="pq-text">Treatment here is not just therapy — it feels like returning to a new life. After years of chronic pain and failed treatments, Ever Ayur Life gave me my freedom back without a single medicine.</p>
               <div className="pq-attr">
                 <div className="pq-line" />
-                <span className="pq-name">Patient · Ever Ayur Life · Thiruvananthapuram</span>
+                <span className="pq-name">Patient · Ever Ayur Life · Malappuram, Edappal, Kerala, India</span>
               </div>
             </div>
           </div>

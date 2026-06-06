@@ -561,7 +561,7 @@ const infoCards = [
   {
     ico: "📍",
     label: "Clinic",
-    value: "Malappuram,Edappal",
+    value: " Malappuram, Edappal, Kerala, India",
     sub: "Kerala, India"
   },
   // {
@@ -764,7 +764,7 @@ export default function Contact() {
                       <div className="fc-field">
                         <select className="fc-select" defaultValue="">
                           <option value="" disabled />
-                          {["Thiruvananthapuram", "Kochi", "Thrissur", "Bangalore", "Chennai", "Other"].map(c => (
+                          {["Malappuram, Edappal,Kerala, India"].map(c => (
                             <option key={c}>{c}</option>
                           ))}
                         </select>
@@ -858,7 +858,7 @@ export default function Contact() {
               <div className="map-grid" />
               <div className="map-label">
                 <div className="ml-name">Ever Ayur Life</div>
-                <div className="ml-city">Thiruvananthapuram, Kerala</div>
+                <div className="ml-city">Malappuram, Edappal, Kerala, India</div>
               </div>
               <div className="map-pin">
                 <div className="mp-dot" />

@@ -266,7 +266,7 @@ const mqItems = ["Heritage","18+ Years","Marma Therapy","No Surgery","6000+ Heal
 
 const journey = [
   { year:"2006", title:"The Beginning", desc:"Unni Gurukkal began formal study of Kalaripayattu Nadi Marma under senior masters in Kerala, immersing deeply in both the martial and healing traditions.", tag:"Foundation" },
-  { year:"2010", title:"First Clinic Opens", desc:"The first clinic opened in Thiruvananthapuram. Early results — especially with chronic pain and arthritis — quickly built a reputation for drug-free, lasting recovery.", tag:"Growth" },
+  { year:"2010", title:"First Clinic Opens", desc:"The first clinic opened in Malappuram, Edappal, Kerala, India. Early results — especially with chronic pain and arthritis — quickly built a reputation for drug-free, lasting recovery.", tag:"Growth" },
   { year:"2015", title:"Neurological Breakthroughs", desc:"Expanded to treat Parkinson's disease, stroke rehabilitation, and nerve compression disorders. Cases declared untreatable by conventional medicine began showing remarkable improvement.", tag:"Milestone" },
   { year:"2024", title:"6000+ Lives Healed", desc:"The milestone of 6,000+ patients reached. Ever Ayur Life became a destination for patients from across Kerala, Karnataka, Tamil Nadu, and beyond.", tag:"Today" },
 ];
@@ -515,7 +515,7 @@ export default function About() {
           <p className="qb-text">Treatment here is not just therapy — it feels like returning to a new life. After years of chronic pain and failed treatments, Ever Ayur Life gave me my freedom back without a single medicine.</p>
           <div className="qb-dash">
             <div className="qb-line"/>
-            <span className="qb-attr">Patient · Ever Ayur Life · Thiruvananthapuram</span>
+            <span className="qb-attr">Patient · Ever Ayur Life ·  Malappuram, Edappal, Kerala, India</span>
             <div className="qb-line"/>
           </div>
         </div>
