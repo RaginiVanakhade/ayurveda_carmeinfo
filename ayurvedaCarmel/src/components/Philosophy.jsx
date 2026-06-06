@@ -260,7 +260,7 @@ const pillars = [
     ico: "🌿",
     tag: "First Pillar",
     title: <>The <em>Body</em></>,
-    img: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=900",
+    img: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=900",
 
     desc1:
       "The body is designed to maintain balance and restore itself when given the right support. Physical discomfort, restricted movement, fatigue, and recurring pain often arise when this natural balance is disrupted by stress, injury, lifestyle habits, or accumulated tension.",
@@ -280,7 +280,7 @@ const pillars = [
     ico: "🕊️",
     tag: "Second Pillar",
     title: <>The <em>Mind</em></>,
-    img: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=900",
+    img: "https://shreehospitalgroup.com/wp-content/uploads/2025/03/square-Image.webp",
 
     desc1:
       "The mind influences every aspect of health. Daily stress, emotional strain, mental fatigue, and poor sleep can affect the body's ability to recover, regulate itself, and maintain overall wellbeing. Lasting wellness requires caring for both physical and mental health together.",
@@ -300,7 +300,7 @@ const pillars = [
     ico: "✨",
     tag: "Third Pillar",
     title: <>The <em>Soul</em></>,
-    img: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=900",
+    img: "https://www.mandira-ayurveda.at/sites/default/files/styles/1_1_1024x1024/public/2025-10/krauterstempelmassage-16.jpg.webp?h=56d0ca2e&itok=X4MKiaLt",
 
     desc1:
       "True wellbeing extends beyond the physical body and the thinking mind. Across traditional healing philosophies, health has always been understood as a deeper sense of harmony, purpose, and connection that supports every aspect of life.",

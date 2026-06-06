@@ -268,7 +268,7 @@ const deepCards = [
   {
     num:"REASON 01",
     ico:"🌿",
-    img:"https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=700",
+    img:"https://i0.wp.com/www.opindia.com/wp-content/uploads/2020/01/kalari-marma-Massage-13131.jpg?fit=1920%2C1080&ssl=1",
     title:"Authentic Kalaripayattu Nadi Marma Healing",
     desc:"Rooted in Kerala's ancient healing heritage, our therapy combines Kalaripayattu wisdom with precise Marma activation techniques that have been preserved and practiced for generations.",
     tags:["Traditional Wisdom","Marma Therapy","Kerala Heritage","Authentic Practice"],
@@ -277,7 +277,7 @@ const deepCards = [
   {
     num:"REASON 02",
     ico:"🧬",
-    img:"https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=700",
+    img:"https://ayurvishwahealthcare.com/wp-content/uploads/2025/10/main-copy-1024x581.jpg",
     title:"Personalized Nadi Assessment",
     desc:"Every individual is unique. Through detailed Nadi evaluation and traditional assessment methods, we create a treatment pathway designed specifically for your body's needs and healing potential.",
     tags:["Nadi Reading","Personalized Care","Individual Plan","Holistic Assessment"],
@@ -286,7 +286,7 @@ const deepCards = [
   {
     num:"REASON 03",
     ico:"🏆",
-    img:"https://images.unsplash.com/photo-1517841905240-472988babdf9?w=700",
+    img:"https://www.bhagwatiayurveda.com/assets/banner-dc2-D9reLck3.jpeg",
     title:"18+ Years of Dedicated Expertise",
     desc:"With nearly two decades devoted exclusively to Kalaripayattu Nadi Marma Therapy, Unni Gurukkal brings deep experience, refined skill, and unwavering commitment to every patient journey.",
     tags:["18+ Years","Master Practitioner","Deep Experience","Trusted Expertise"],
@@ -295,7 +295,7 @@ const deepCards = [
   {
     num:"REASON 04",
     ico:"❤️",
-    img:"https://images.unsplash.com/photo-1518611012118-696072aa579a?w=700",
+    img:"https://yuvrit.in/cdn/shop/files/Vamana_treatment_ayurveda.webp?v=1752501697&width=1200",
     title:"6,000+ Healing Journeys",
     desc:"Thousands of individuals have trusted Ever Ayur Life for support with pain management, mobility improvement, wellness restoration, and overall quality of life enhancement.",
     tags:["6000+ Patients","Trusted Care","Proven Track Record","Life Transformation"],
@@ -304,7 +304,7 @@ const deepCards = [
   {
     num:"REASON 05",
     ico:"⚖️",
-    img:"https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=700",
+    img:"https://ayurhealing.net/wp-content/uploads/2026/01/Best-Ayurvedic-Treatment-in-Bangalore-Natural-Solutions-for-Pain-Stress-Digestion.jpg",
     title:"Treating the Root Cause",
     desc:"Rather than focusing only on symptoms, our approach seeks to identify and address underlying imbalances within the body, supporting long-term wellness and sustainable recovery.",
     tags:["Root Cause","Long-Term Wellness","Balance","Sustainable Healing"],
@@ -313,7 +313,7 @@ const deepCards = [
   {
     num:"REASON 06",
     ico:"✨",
-    img:"https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=700",
+    img:"https://ayurvishwahealthcare.com/wp-content/uploads/2025/11/Yoga_and_Ayurveda-1024x683.webp",
     title:"Complete Mind-Body Wellness",
     desc:"Healing extends beyond physical comfort. Our integrated approach combines Marma therapy, breathing practices, movement traditions, and lifestyle guidance to support overall wellbeing.",
     tags:["Mind & Body","Pranayama","Holistic Wellness","Lifestyle Balance"],

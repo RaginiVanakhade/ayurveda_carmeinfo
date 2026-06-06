@@ -436,7 +436,7 @@ export default function Treatment() {
             </div>
           </div>
           <div className="th-visual">
-            <img className="th-img" src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800" alt="Marma Healing" />
+            <img className="th-img" src="https://ayurvedaorganics.com.au/cdn/shop/articles/how-anti-ageing-face-masks-and-serums-work-together-in-ayurvedic-skincare-7212009.png?v=1771475416&width=2048" alt="Marma Healing" />
             <div className="th-float-1">
               <div className="tf-num">6000+</div>
               <div className="tf-lbl">Patients Healed</div>
