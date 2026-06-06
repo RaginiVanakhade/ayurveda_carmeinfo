@@ -623,6 +623,7 @@ export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
   const [openFaq, setOpenFaq] = useState(null);
   const [form, setForm] = useState({ name: "", phone: "", email: "", city: "", message: "" });
+  const whatsappLink = "https://wa.me/919645911821?text=Hello%20Ever%20Ayur%20Life,%20I%20would%20like%20to%20book%20a%20consultation.";
 
   const handleChange = e => setForm(f => ({ ...f, [e.target.name]: e.target.value }));
   const handleSubmit = e => { e.preventDefault(); setSubmitted(true); };
@@ -676,7 +677,20 @@ export default function Contact() {
               <div className="ib-ico">{c.ico}</div>
               <div>
                 <div className="ib-label">{c.label}</div>
-                <div className="ib-value">{c.value}</div>
+                <div className="ib-value">
+                  {c.label === "Appointments" ? (
+  <a
+    href={whatsappLink}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="ib-value"
+  >
+    {c.value}
+  </a>
+) : (
+  <div className="ib-value">{c.value}</div>
+)}
+                </div>
                 <div className="ib-sub">{c.sub}</div>
               </div>
             </div>
@@ -915,9 +929,22 @@ export default function Contact() {
             Discover personalized Ayurvedic care rooted in time-honored wisdom. Whether you're seeking relief from chronic discomfort or looking to improve overall well-being, we're here to guide you every step of the way.
           </p>        </div>
         <div className="cb-right-panel">
-          <a href="tel:+919876543210" className="btn-w"> 📞 Book a Consultation</a>
-          <a href="mailto:info@everayurlife.com" className="btn-ow">  ✉️ Contact Our Team
-          </a>
+         <a
+  href={whatsappLink}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="btn-w"
+>
+  📞 Book a Consultation
+</a>
+<a
+  href={whatsappLink}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="btn-ow"
+>
+  ✉️ Contact Our Team
+</a>
           <span className="cbrp-note">Or scroll up to fill the booking form</span>
         </div>
       </div>
