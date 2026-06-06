@@ -231,7 +231,7 @@ const FOOTER_CSS = `
 const marqueeItems = [
   "Kalari Nadi Therapy", "Drug-Free Healing", "Kerala Heritage",
   "18+ Years Experience", "Marma Therapy", "No Surgery Needed",
-  "6000+ Healed", "Thiruvananthapuram",
+  "6000+ Healed", "Malappuram,Edappal, Kerala, India ",
 ];
 
 const navLinks = [
@@ -319,9 +319,9 @@ export default function Footer() {
             <div className="ft2-contact-list">
               {[
                 { type: "Email",    val: "info@everayurlife.com" },
-                { type: "Phone",    val: "+91 98765 43210" },
-                { type: "Alternate",val: "+91 91234 56789" },
-                { type: "Location", val: "Thiruvananthapuram, Kerala" },
+                { type: "Phone",    val: " +91 96459 11821" },
+                // { type: "Alternate",val: "+91 91234 56789" },
+                { type: "Location", val: "Malappuram, Edappal, Kerala, India" },
               ].map(c => (
                 <div className="ft2-contact-item" key={c.type}>
                   <div className="ft2-contact-type">{c.type}</div>

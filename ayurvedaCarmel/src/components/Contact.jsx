@@ -108,7 +108,7 @@ const CSS = `
   .info-bar{background:var(--white);border-bottom:1px solid var(--border);}
   .info-bar-inner{
     max-width:1280px;margin:0 auto;
-    display:grid;grid-template-columns:repeat(4,1fr);
+    display:grid;grid-template-columns:repeat(2,1fr);
     border-left:1px solid var(--border);
   }
   .ib-card{
@@ -546,30 +546,30 @@ const hoursData = [
 ];
 
 const infoCards = [
-  {
-    ico: "📧",
-    label: "Email",
-    value: "care@everayurlife.com",
-    sub: "Response within 24 hours"
-  },
+  // {
+  //   ico: "📧",
+  //   label: "Email",
+  //   value: "care@everayurlife.com",
+  //   sub: "Response within 24 hours"
+  // },
   {
     ico: "📞",
     label: "Appointments",
-    value: "+91 XXXXX XXXXX",
+    value: "+91 96459 11821",
     sub: "Call or WhatsApp"
   },
   {
     ico: "📍",
     label: "Clinic",
-    value: "Thiruvananthapuram",
+    value: "Malappuram,Edappal",
     sub: "Kerala, India"
   },
-  {
-    ico: "⏰",
-    label: "Consultation",
-    value: "Free Nadi Assessment",
-    sub: "Prior booking recommended"
-  }
+  // {
+  //   ico: "⏰",
+  //   label: "Consultation",
+  //   value: "Free Nadi Assessment",
+  //   sub: "Prior booking recommended"
+  // }
 ];
 
 const reachItems = [
