@@ -151,6 +151,8 @@ const FOOTER_CSS = `
   font-weight: 300;
   color: rgba(231,239,199,0.65);
   letter-spacing: 0.02em;
+   text-decoration: none;
+  
 }
 .ft2-social-row { display: flex; gap: 5px; margin-top: 14px; }
 .ft2-soc2 {
@@ -318,14 +320,23 @@ export default function Footer() {
             <div className="ft2-col-label">Reach Us</div>
             <div className="ft2-contact-list">
               {[
-                { type: "Email",    val: "info@everayurlife.com" },
-                { type: "Phone",    val: " +91 96459 11821" },
-                // { type: "Alternate",val: "+91 91234 56789" },
-                { type: "Location", val: "Malappuram, Edappal, Kerala, India" },
-              ].map(c => (
+  // { type: "Email", val: "info@everayurlife.com" },
+  {
+    type: "Phone",
+    val: "+91 96459 11821",
+    href: "https://wa.me/919645911821"
+  },
+  { type: "Location", val: "Malappuram, Edappal, Kerala, India" },
+].map(c => (
                 <div className="ft2-contact-item" key={c.type}>
                   <div className="ft2-contact-type">{c.type}</div>
-                  <div className="ft2-contact-val">{c.val}</div>
+                  {c.href ? (
+                    <a href={c.href} className="ft2-contact-val" target="_blank" rel="noopener noreferrer">
+                      {c.val}
+                    </a>
+                  ) : (
+                    <div className="ft2-contact-val">{c.val}</div>
+                  )}
                 </div>
               ))}
             </div>
