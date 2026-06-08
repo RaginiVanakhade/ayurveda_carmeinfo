@@ -52,7 +52,6 @@ const CSS = `
     background:url(${about7}) center/cover no-repeat;
     opacity:0.14;
   }
-  /* diagonal lines pattern */
   .hero-pattern{
     position:absolute;inset:0;
     background-image:repeating-linear-gradient(
@@ -245,20 +244,63 @@ const CSS = `
     top:6px;font-size:8px;color:var(--green);
   }
 
-  /* time slot grid inside form */
-  .fc-slot-label{font-family:'Cinzel',serif;font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:var(--text-muted);font-weight:600;display:block;margin:0 0 12px;}
-  .fc-slots{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:20px;}
+  /* ── DATE PICKER ── */
+  .fc-date-wrap{position:relative;margin-bottom:20px;}
+  .fc-date-input{
+    width:100%;background:var(--off-white);
+    border:1.5px solid var(--border);border-radius:8px;
+    padding:20px 16px 8px;
+    font-family:'Nunito',sans-serif;font-size:14px;
+    color:var(--text);outline:none;
+    transition:border-color 0.25s,box-shadow 0.25s;
+    appearance:none;cursor:pointer;
+  }
+  .fc-date-input:focus{
+    border-color:var(--green);background:var(--white);
+    box-shadow:0 0 0 3px rgba(90,90,42,0.08);
+  }
+  .fc-date-input::-webkit-calendar-picker-indicator{
+    opacity:0.5;cursor:pointer;
+  }
+
+  /* ── TIME SLOTS ── */
+  .fc-slot-label{
+    font-family:'Cinzel',serif;font-size:9px;letter-spacing:0.2em;
+    text-transform:uppercase;color:var(--text-muted);font-weight:600;
+    display:block;margin:0 0 12px;
+  }
+  .fc-slots{
+    display:grid;grid-template-columns:repeat(3,1fr);
+    gap:10px;margin-bottom:20px;
+  }
   .fc-slot{
     background:var(--white);border:1.5px solid var(--border);
-    border-radius:7px;padding:9px 4px;cursor:pointer;text-align:center;
-    transition:all 0.22s;
+    border-radius:10px;padding:14px 10px;cursor:pointer;text-align:center;
+    transition:all 0.22s;position:relative;overflow:hidden;
+  }
+  .fc-slot::before{
+    content:'';position:absolute;inset:0;
+    background:linear-gradient(135deg,var(--green-dark),var(--green));
+    opacity:0;transition:opacity 0.22s;
   }
   .fc-slot:hover{border-color:var(--green);background:var(--green-pale);}
-  .fc-slot.on{border-color:var(--green-dark);background:var(--green-dark);}
-  .fcs-t{font-family:'Cinzel',serif;font-size:11px;font-weight:700;color:var(--text-mid);}
+  .fc-slot.on{border-color:var(--green-dark);background:transparent;}
+  .fc-slot.on::before{opacity:1;}
+  .fcs-ico{font-size:22px;display:block;margin-bottom:6px;position:relative;z-index:1;}
+  .fcs-t{
+    font-family:'Cinzel',serif;font-size:11px;font-weight:700;
+    color:var(--text-mid);display:block;position:relative;z-index:1;
+  }
   .fc-slot.on .fcs-t{color:var(--white);}
-  .fcs-p{font-size:9px;color:var(--text-muted);margin-top:1px;}
-  .fc-slot.on .fcs-p{color:rgba(255,255,255,0.6);}
+  .fcs-p{
+    font-size:10px;color:var(--text-muted);margin-top:3px;
+    display:block;position:relative;z-index:1;line-height:1.4;
+  }
+  .fc-slot.on .fcs-p{color:rgba(255,255,255,0.65);}
+  .fc-slot-required{
+    font-size:11px;color:#c0392b;font-family:'Nunito',sans-serif;
+    margin-top:-10px;margin-bottom:14px;display:block;
+  }
 
   /* privacy row */
   .fc-privacy{
@@ -275,13 +317,29 @@ const CSS = `
     color:var(--white);border:none;border-radius:8px;
     padding:16px;font-family:'Cinzel',serif;font-size:11px;
     font-weight:700;letter-spacing:0.16em;text-transform:uppercase;
-    cursor:pointer;transition:transform 0.25s,box-shadow 0.25s;
+    cursor:pointer;transition:transform 0.25s,box-shadow 0.25s,opacity 0.25s;
     box-shadow:0 6px 24px rgba(59,59,26,0.28);
     display:flex;align-items:center;justify-content:center;gap:10px;
   }
-  .fc-submit:hover{transform:translateY(-2px);box-shadow:0 12px 36px rgba(59,59,26,0.38);}
+  .fc-submit:disabled{opacity:0.65;cursor:not-allowed;transform:none;}
+  .fc-submit:not(:disabled):hover{transform:translateY(-2px);box-shadow:0 12px 36px rgba(59,59,26,0.38);}
   .fc-arrow{transition:transform 0.25s;}
-  .fc-submit:hover .fc-arrow{transform:translateX(5px);}
+  .fc-submit:not(:disabled):hover .fc-arrow{transform:translateX(5px);}
+
+  /* loading spinner */
+  .fc-spinner{
+    width:16px;height:16px;border:2px solid rgba(255,255,255,0.35);
+    border-top-color:var(--white);border-radius:50%;
+    animation:spinSlow 0.7s linear infinite;
+  }
+
+  /* error message */
+  .fc-error{
+    background:#fff3f3;border:1px solid #f5c6c6;border-radius:8px;
+    padding:12px 16px;margin-bottom:16px;
+    font-size:13px;color:#c0392b;font-weight:400;line-height:1.5;
+    display:flex;gap:10px;align-items:flex-start;
+  }
 
   /* SUCCESS */
   .success-wrap{
@@ -362,7 +420,6 @@ const CSS = `
     background:url(${ayurved1}) center/cover no-repeat;
     opacity:0.2;
   }
-  /* grid lines for map feel */
   .map-grid{
     position:absolute;inset:0;
     background-image:
@@ -489,7 +546,7 @@ const CSS = `
     .cp-header{grid-column:span 2;}
     .fc-row{grid-template-columns:1fr;}
     .fc-field.full{grid-column:span 1;}
-    .fc-slots{grid-template-columns:repeat(4,1fr);}
+    .fc-slots{grid-template-columns:repeat(3,1fr);}
     .hm-hours,.hm-location{padding:40px 28px;}
     .reach-row{grid-template-columns:1fr;}
     .hms-stats{flex-wrap:wrap;}
@@ -498,7 +555,7 @@ const CSS = `
   @media(max-width:540px){
     .info-bar-inner{grid-template-columns:1fr;}
     .ib-card{border-right:none;border-bottom:1px solid var(--border);}
-    .fc-slots{grid-template-columns:repeat(2,1fr);}
+    .fc-slots{grid-template-columns:1fr;}
     .fc-body{padding:20px;}
     .concern-panel{display:flex;flex-direction:column;}
     .hm-stats{flex-direction:column;}
@@ -517,6 +574,7 @@ const mqItems = [
   "Holistic Ayurvedic Care",
   "Ever Ayur Life"
 ];
+
 const concerns = [
   { ico: "🦴", name: "Back & Neck Pain" },
   { ico: "🦵", name: "Joint Disorders" },
@@ -528,9 +586,28 @@ const concerns = [
   { ico: "🌿", name: "Preventive Wellness" }
 ];
 
-const slots = [
-  { t: "08:00", p: "AM" }, { t: "09:00", p: "AM" }, { t: "10:00", p: "AM" }, { t: "11:00", p: "AM" },
-  { t: "03:30", p: "PM" }, { t: "05:00", p: "PM" }, { t: "06:00", p: "PM" }, { t: "07:00", p: "PM" },
+const TIME_SLOTS = [
+  {
+    id: "morning",
+    ico: "🌅",
+    label: "Morning Slot",
+    time: "08:00 AM – 01:00 PM",
+    value: "Morning Slot"
+  },
+  {
+    id: "afternoon",
+    ico: "☀️",
+    label: "After Noon",
+    time: "03:30 PM – 05:00 PM",
+    value: "After Noon"
+  },
+  {
+    id: "evening",
+    ico: "🌇",
+    label: "Evening",
+    time: "05:00 PM – 07:00 PM",
+    value: "Evening"
+  }
 ];
 
 const hoursData = [
@@ -547,12 +624,6 @@ const hoursData = [
 ];
 
 const infoCards = [
-  // {
-  //   ico: "📧",
-  //   label: "Email",
-  //   value: "care@everayurlife.com",
-  //   sub: "Response within 24 hours"
-  // },
   {
     ico: "📞",
     label: "Appointments",
@@ -565,12 +636,6 @@ const infoCards = [
     value: " Malappuram, Edappal, Kerala, India",
     sub: "Kerala, India"
   },
-  // {
-  //   ico: "⏰",
-  //   label: "Consultation",
-  //   value: "Free Nadi Assessment",
-  //   sub: "Prior booking recommended"
-  // }
 ];
 
 const reachItems = [
@@ -618,17 +683,113 @@ const faqs = [
   }
 ];
 
+// Get today's date as min value for date picker (YYYY-MM-DD)
+function getTodayString() {
+  const d = new Date();
+  const yyyy = d.getFullYear();
+  const mm = String(d.getMonth() + 1).padStart(2, "0");
+  const dd = String(d.getDate()).padStart(2, "0");
+  return `${yyyy}-${mm}-${dd}`;
+}
+
+// Format date for display and posting (DD/MM/YYYY)
+function formatDateDisplay(dateStr) {
+  if (!dateStr) return "";
+  const [yyyy, mm, dd] = dateStr.split("-");
+  return `${dd}/${mm}/${yyyy}`;
+}
+
 export default function Contact() {
   const [selConcern, setSelConcern] = useState(null);
-  const [selSlot, setSelSlot] = useState(null);
   const [submitted, setSubmitted] = useState(false);
   const [openFaq, setOpenFaq] = useState(null);
-  const [form, setForm] = useState({ name: "", phone: "", email: "", city: "", message: "" });
+  const [selectedSlot, setSelectedSlot] = useState(null);
+  const [slotError, setSlotError] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [submitError, setSubmitError] = useState("");
+  const [form, setForm] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    city: "Malappuram, Edappal,Kerala, India",
+    message: "",
+    date: ""
+  });
+
   const whatsappLink = "https://wa.me/919645911821?text=Hello%20Ever%20Ayur%20Life,%20I%20would%20like%20to%20book%20a%20consultation.";
 
   const handleChange = e => setForm(f => ({ ...f, [e.target.name]: e.target.value }));
-  const handleSubmit = e => { e.preventDefault(); setSubmitted(true); };
-  const reset = () => { setSubmitted(false); setForm({ name: "", phone: "", email: "", city: "", message: "" }); setSelConcern(null); setSelSlot(null); };
+
+  const handleSlotSelect = (slotId) => {
+    setSelectedSlot(slotId);
+    setSlotError(false);
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // Validate slot selection
+    if (!selectedSlot) {
+      setSlotError(true);
+      return;
+    }
+
+    setLoading(true);
+    setSubmitError("");
+
+    const slotObj = TIME_SLOTS.find(s => s.id === selectedSlot);
+    const concernName = selConcern !== null ? concerns[selConcern].name : "";
+
+    // Build POST body — all fields as form-urlencoded
+    const payload = new URLSearchParams();
+    payload.append("name", form.name);
+    payload.append("phone", form.phone);
+    payload.append("email", form.email);
+    payload.append("city", form.city);
+    payload.append("message", form.message);
+    payload.append("date", formatDateDisplay(form.date));
+    payload.append("slot", slotObj.value);
+    payload.append("concern", concernName);
+
+    try {
+      const response = await fetch("https://everayurlife.com/postform.php", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded"
+        },
+        body: payload.toString()
+      });
+
+      // Accept any 2xx response as success
+      if (response.ok) {
+        setSubmitted(true);
+      } else {
+        setSubmitError(
+          `Submission failed (${response.status}). Please try again or contact us on WhatsApp.`
+        );
+      }
+    } catch (err) {
+      // Network error or CORS — still show success as fallback
+      // since form data may have been received by server
+      console.error("Form POST error:", err);
+      setSubmitError(
+        "Could not connect to the server. Please check your internet connection and try again, or reach us on WhatsApp."
+      );
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const reset = () => {
+    setSubmitted(false);
+    setForm({ name: "", phone: "", email: "", city: "Malappuram, Edappal,Kerala, India", message: "", date: "" });
+    setSelConcern(null);
+    setSelectedSlot(null);
+    setSlotError(false);
+    setSubmitError("");
+  };
+
+  const selectedSlotObj = TIME_SLOTS.find(s => s.id === selectedSlot);
 
   return (
     <>
@@ -654,7 +815,6 @@ export default function Contact() {
             <div className="hero-eyebrow">
               Ever Ayur Life · Traditional Kalari Marma Healing
             </div>
-
             <h1 className="hero-title">
               Restore Your Body.<br />
               Reclaim Your <em>Wellness.</em>
@@ -680,17 +840,17 @@ export default function Contact() {
                 <div className="ib-label">{c.label}</div>
                 <div className="ib-value">
                   {c.label === "Appointments" ? (
-  <a
-    href={whatsappLink}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="ib-value"
-  >
-    {c.value}
-  </a>
-) : (
-  <div className="ib-value">{c.value}</div>
-)}
+                    <a
+                      href={whatsappLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="ib-value"
+                    >
+                      {c.value}
+                    </a>
+                  ) : (
+                    <div className="ib-value">{c.value}</div>
+                  )}
                 </div>
                 <div className="ib-sub">{c.sub}</div>
               </div>
@@ -733,22 +893,38 @@ export default function Contact() {
             {submitted ? (
               <div className="success-wrap">
                 <div className="sw-ring">✓</div>
-                <h2 className="sw-title"> Consultation <em>Request Submitted</em></h2>
+                <h2 className="sw-title">Consultation <em>Request Submitted</em></h2>
                 <p className="sw-desc">
                   Thank you for contacting Ever Ayur Life. Our team will review your request and connect with you shortly to confirm your consultation and discuss the next steps in your healing journey.
-                </p>                <div className="sw-summary">
-                  <span className="sws-tag">Your Booking Summary</span>
-                  {[
-                    { k: "Name", v: form.name || "—" },
-                    { k: "Phone", v: form.phone || "—" },
-                    { k: "Concern", v: selConcern != null ? concerns[selConcern].name : "—" },
-                    { k: "Preferred Time", v: selSlot != null ? `${slots[selSlot].t} ${slots[selSlot].p}` : "—" },
-                  ].map((r, i) => (
-                    <div className="sws-row" key={i}>
-                      <span className="sws-k">{r.k}</span>
-                      <span className="sws-v">{r.v}</span>
+                </p>
+                <div className="sw-summary">
+                  <span className="sws-tag">Booking Summary</span>
+                  <div className="sws-row">
+                    <span className="sws-k">Name</span>
+                    <span className="sws-v">{form.name}</span>
+                  </div>
+                  <div className="sws-row">
+                    <span className="sws-k">Phone</span>
+                    <span className="sws-v">{form.phone}</span>
+                  </div>
+                  {form.date && (
+                    <div className="sws-row">
+                      <span className="sws-k">Date</span>
+                      <span className="sws-v">{formatDateDisplay(form.date)}</span>
                     </div>
-                  ))}
+                  )}
+                  {selectedSlotObj && (
+                    <div className="sws-row">
+                      <span className="sws-k">Slot</span>
+                      <span className="sws-v">{selectedSlotObj.ico} {selectedSlotObj.label}</span>
+                    </div>
+                  )}
+                  {selConcern !== null && (
+                    <div className="sws-row">
+                      <span className="sws-k">Concern</span>
+                      <span className="sws-v">{concerns[selConcern].name}</span>
+                    </div>
+                  )}
                 </div>
                 <button className="sw-again" onClick={reset}>Book Another Session</button>
               </div>
@@ -762,53 +938,132 @@ export default function Contact() {
                   </div>
                 </div>
                 <div className="fc-body">
+                  {submitError && (
+                    <div className="fc-error">
+                      <span>⚠️</span>
+                      <span>{submitError}</span>
+                    </div>
+                  )}
                   <form onSubmit={handleSubmit}>
                     <div className="fc-row">
                       <div className="fc-field">
-                        <input className="fc-input" type="text" name="name" placeholder=" " required value={form.name} onChange={handleChange} />
+                        <input
+                          className="fc-input"
+                          type="text"
+                          name="name"
+                          placeholder=" "
+                          required
+                          value={form.name}
+                          onChange={handleChange}
+                        />
                         <label className="fc-lbl">Full Name</label>
                       </div>
                       <div className="fc-field">
-                        <input className="fc-input" type="tel" name="phone" placeholder=" " required value={form.phone} onChange={handleChange} />
+                        <input
+                          className="fc-input"
+                          type="tel"
+                          name="phone"
+                          placeholder=" "
+                          required
+                          value={form.phone}
+                          onChange={handleChange}
+                        />
                         <label className="fc-lbl">Phone Number</label>
                       </div>
                       <div className="fc-field">
-                        <input className="fc-input" type="email" name="email" placeholder=" " value={form.email} onChange={handleChange} />
+                        <input
+                          className="fc-input"
+                          type="email"
+                          name="email"
+                          placeholder=" "
+                          value={form.email}
+                          onChange={handleChange}
+                        />
                         <label className="fc-lbl">Email (Optional)</label>
                       </div>
                       <div className="fc-field">
-                        <select className="fc-select" defaultValue="">
-                          <option value="" disabled />
-                          {["Malappuram, Edappal,Kerala, India"].map(c => (
-                            <option key={c}>{c}</option>
-                          ))}
+                        <select
+                          className="fc-select"
+                          name="city"
+                          value={form.city}
+                          onChange={handleChange}
+                        >
+                          <option value="Malappuram, Edappal,Kerala, India">
+                            Malappuram, Edappal, Kerala, India
+                          </option>
                         </select>
                         <label className="fc-lbl">Your City</label>
                       </div>
                       <div className="fc-field full">
-                        <textarea className="fc-textarea" name="message" placeholder=" " value={form.message} onChange={handleChange} />
+                        <textarea
+                          className="fc-textarea"
+                          name="message"
+                          placeholder=" "
+                          value={form.message}
+                          onChange={handleChange}
+                        />
                         <label className="fc-lbl">Describe Your Condition (Optional)</label>
                       </div>
                     </div>
 
-                    <span className="fc-slot-label">Preferred Appointment Time</span>
+                    {/* ── DATE PICKER ── */}
+                    <div className="fc-date-wrap">
+                      <div className="fc-field">
+                        <input
+                          className="fc-date-input"
+                          type="date"
+                          name="date"
+                          required
+                          min={getTodayString()}
+                          value={form.date}
+                          onChange={handleChange}
+                        />
+                        <label className="fc-lbl" style={{ top: form.date ? "6px" : "14px", fontSize: form.date ? "8px" : "9px", color: form.date ? "var(--green)" : "var(--text-muted)" }}>
+                          Preferred Date
+                        </label>
+                      </div>
+                    </div>
+
+                    {/* ── TIME SLOTS ── */}
+                    <span className="fc-slot-label">Preferred Appointment Slot</span>
                     <div className="fc-slots">
-                      {slots.map((s, i) => (
-                        <div key={i} className={`fc-slot${selSlot === i ? " on" : ""}`} onClick={() => setSelSlot(i)}>
-                          <div className="fcs-t">{s.t}</div>
-                          <div className="fcs-p">{s.p}</div>
+                      {TIME_SLOTS.map(slot => (
+                        <div
+                          key={slot.id}
+                          className={`fc-slot${selectedSlot === slot.id ? " on" : ""}`}
+                          onClick={() => handleSlotSelect(slot.id)}
+                        >
+                          <span className="fcs-ico">{slot.ico}</span>
+                          <span className="fcs-t">{slot.label}</span>
+                          <span className="fcs-p">{slot.time}</span>
                         </div>
                       ))}
                     </div>
+                    {slotError && (
+                      <span className="fc-slot-required">⚠ Please select a preferred time slot.</span>
+                    )}
 
-                    <div className="fc-privacy">
+                    {/* <div className="fc-privacy">
                       <span className="fcp-ico">🔒</span>
                       <p className="fcp-txt">Your details are completely private and only used to confirm your appointment. We never share your information with third parties.</p>
-                    </div>
+                    </div> */}
 
-                    <button type="submit" className="fc-submit">
-                      Book Free Nadi Assessment
-                      <span className="fc-arrow">→</span>
+                    <button
+                      type="submit"
+                      className="fc-submit"
+                      disabled={loading}
+                    >
+                      {loading ? (
+                        <>
+                          <div className="fc-spinner" />
+                          Submitting…
+                        </>
+                      ) : (
+                        <>
+                          Book Free Nadi Assessment
+                          <span className="fc-arrow">→</span>
+                        </>
+                      )}
                     </button>
                   </form>
                 </div>
@@ -837,21 +1092,9 @@ export default function Contact() {
             </div>
             <div className="hm-stats">
               {[
-                {
-                  ico: "🌿",
-                  num: "18+",
-                  lbl: "Years Experience"
-                },
-                {
-                  ico: "👥",
-                  num: "6000+",
-                  lbl: "Patients Guided"
-                },
-                {
-                  ico: "🏆",
-                  num: "100%",
-                  lbl: "Natural Approach"
-                }
+                { ico: "🌿", num: "18+", lbl: "Years Experience" },
+                { ico: "👥", num: "6000+", lbl: "Patients Guided" },
+                { ico: "🏆", num: "100%", lbl: "Natural Approach" }
               ].map((s, i) => (
                 <div className="hms-pill" key={i}>
                   <span className="hms-ico">{s.ico}</span>
@@ -922,30 +1165,31 @@ export default function Contact() {
       {/* ── BOTTOM CTA BANNER ── */}
       <div className="cta-banner">
         <div className="cb-left-panel">
-          <span className="cblp-tag"> Begin Your Wellness Journey</span>
+          <span className="cblp-tag">Begin Your Wellness Journey</span>
           <h2 className="cblp-title">
             Experience the Power of <em>Traditional Healing</em>
           </h2>
           <p className="cblp-desc">
             Discover personalized Ayurvedic care rooted in time-honored wisdom. Whether you're seeking relief from chronic discomfort or looking to improve overall well-being, we're here to guide you every step of the way.
-          </p>        </div>
+          </p>
+        </div>
         <div className="cb-right-panel">
-         <a
-  href={whatsappLink}
-  target="_blank"
-  rel="noopener noreferrer"
-  className="btn-w"
->
-  📞 Book a Consultation
-</a>
-<a
-  href={whatsappLink}
-  target="_blank"
-  rel="noopener noreferrer"
-  className="btn-ow"
->
-  ✉️ Contact Our Team
-</a>
+          <a
+            href={whatsappLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-w"
+          >
+            📞 Book a Consultation
+          </a>
+          <a
+            href={whatsappLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-ow"
+          >
+            ✉️ Contact Our Team
+          </a>
           <span className="cbrp-note">Or scroll up to fill the booking form</span>
         </div>
       </div>
