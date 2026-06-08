@@ -145,15 +145,15 @@ const CSS = `
   .f2-label { font-size:9px; letter-spacing:0.12em; text-transform:uppercase; color:rgba(255,255,255,0.78); margin-top:3px; }
 
   /* ── FEATURES GRID ── */
-  .feat-wrap { background:var(--white); padding:0 32px; }
+  .feat-wrap { background:var(--white); padding:0 22px; }
   .feat-grid {
-    max-width:1280px; margin:0 auto;
-    display:grid; grid-template-columns:repeat(4,1fr); gap:0;
+    max-width:1480px; margin:0 auto;
+    display:grid; grid-template-columns:repeat(5,1fr); gap:0;
     border:1px solid var(--border); border-radius:16px; overflow:hidden;
     box-shadow:0 6px 28px var(--shadow); transform:translateY(-38px);
   }
   .feat-box {
-    padding:28px 22px; display:flex; align-items:flex-start; gap:14px;
+    padding:18px 22px; display:flex; align-items:flex-start; gap:14px;
     border-right:1px solid var(--border); background:var(--white); transition:background 0.25s;
   }
   .feat-box:last-child { border-right:none; }
@@ -342,6 +342,11 @@ const features = [
     icon: "🌿",
     title: "Pain Management",
     desc: "Natural therapies designed to help relieve chronic and acute body pain."
+  },
+  {
+    icon: "🧠",
+    title: "Fibromayalgia",
+    desc: "Fibromyalgia is a chronic condition that causes widespread body pain, fatigue, sleep problems, and difficulty concentrating. It affects how the brain processes pain signals, making pain feel stronger."
   },
   {
     icon: "🧠",
