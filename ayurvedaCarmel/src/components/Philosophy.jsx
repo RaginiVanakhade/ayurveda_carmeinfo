@@ -1,5 +1,14 @@
 const FONTS = `@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Playfair+Display:ital,wght@0,500;0,600;1,400;1,500&display=swap');`;
 
+
+
+import Philosophy1 from "../assets/Philosophy.jpg"
+import philosophy2 from "../assets/Philosophy2.webp"
+import Philosophy3 from "../assets/Philosophy3.webp"
+import Philosophy4 from "../assets/Philosophy4.jpg"
+import Philosophy5 from "../assets/Philosophy5.jpg"
+import Philosophy6 from "../assets/Philosophy6.jpg"
+import Philosophy7 from "../assets/Philosophy7.jpg"
 const CSS = `
   :root {
     --green:       #5a5a2a;
@@ -38,7 +47,7 @@ const CSS = `
     display:flex; align-items:center; justify-content:center;
     background:var(--green-dark);
   }
-  .ph-bg { position:absolute; inset:0; background:url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1400') center/cover no-repeat; opacity:0.15; }
+  .ph-bg { position:absolute; inset:0; background:url(${Philosophy6}) center/cover no-repeat; opacity:0.15; }
   .ph-ring1 { position:absolute; width:700px; height:700px; border-radius:50%; border:1px solid rgba(255,255,255,0.05); top:50%; left:50%; transform:translate(-50%,-50%); animation:spin 80s linear infinite; }
   .ph-ring2 { position:absolute; width:520px; height:520px; border-radius:50%; border:1px solid rgba(255,255,255,0.07); top:50%; left:50%; transform:translate(-50%,-50%); animation:spin 55s linear infinite reverse; }
   .ph-ring3 { position:absolute; width:340px; height:340px; border-radius:50%; border:1px solid rgba(255,255,255,0.1); top:50%; left:50%; transform:translate(-50%,-50%); animation:spin 35s linear infinite; }
@@ -185,7 +194,7 @@ const CSS = `
 
   /* ── IMMERSIVE QUOTE SECTION ── */
   .quote-full { min-height:60vh; background:var(--green-dark); display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden; padding:80px 32px; }
-  .qf-bg { position:absolute; inset:0; background:url('https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1400') center/cover no-repeat; opacity:0.1; }
+  .qf-bg { position:absolute; inset:0; background:url(${Philosophy7}) center/cover no-repeat; opacity:0.1; }
   .qf-ring { position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:700px; height:700px; border-radius:50%; border:1px solid rgba(255,255,255,0.04); animation:spin 80s linear infinite; pointer-events:none; }
   .qf-inner { max-width:760px; text-align:center; position:relative; z-index:1; }
   .qf-mark { font-family:'Playfair Display',serif; font-size:120px; line-height:0.6; color:rgba(255,255,255,0.07); display:block; margin-bottom:24px; }
@@ -260,7 +269,7 @@ const pillars = [
     ico: "🌿",
     tag: "First Pillar",
     title: <>The <em>Body</em></>,
-    img: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=900",
+    img: Philosophy1,
 
     desc1:
       "The body is designed to maintain balance and restore itself when given the right support. Physical discomfort, restricted movement, fatigue, and recurring pain often arise when this natural balance is disrupted by stress, injury, lifestyle habits, or accumulated tension.",
@@ -280,7 +289,7 @@ const pillars = [
     ico: "🕊️",
     tag: "Second Pillar",
     title: <>The <em>Mind</em></>,
-    img: "https://shreehospitalgroup.com/wp-content/uploads/2025/03/square-Image.webp",
+    img: philosophy2,
 
     desc1:
       "The mind influences every aspect of health. Daily stress, emotional strain, mental fatigue, and poor sleep can affect the body's ability to recover, regulate itself, and maintain overall wellbeing. Lasting wellness requires caring for both physical and mental health together.",
@@ -300,7 +309,7 @@ const pillars = [
     ico: "✨",
     tag: "Third Pillar",
     title: <>The <em>Soul</em></>,
-    img: "https://www.mandira-ayurveda.at/sites/default/files/styles/1_1_1024x1024/public/2025-10/krauterstempelmassage-16.jpg.webp?h=56d0ca2e&itok=X4MKiaLt",
+    img: Philosophy3,
 
     desc1:
       "True wellbeing extends beyond the physical body and the thinking mind. Across traditional healing philosophies, health has always been understood as a deeper sense of harmony, purpose, and connection that supports every aspect of life.",
@@ -535,8 +544,8 @@ export default function Philosophy() {
         <div className="nadi-inner">
           <div className="nadi-grid">
             <div className="nadi-imgs">
-              <img className="nadi-main" src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=700" alt="Nadi Diagnosis"/>
-              <img className="nadi-sub" src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600" alt="Ayurvedic herbs"/>
+              <img className="nadi-main" src={Philosophy4} alt="Nadi Diagnosis"/>
+              <img className="nadi-sub" src={Philosophy5} alt="Ayurvedic herbs"/>
               <div className="nadi-badge">
                 <div className="nb-ico">🫀</div>
                 <div className="nb-label">Nadi Reading</div>
