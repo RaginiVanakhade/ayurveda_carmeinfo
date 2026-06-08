@@ -10,6 +10,7 @@ import home6 from "../assets/home6.jpg"
 import home7 from "../assets/home7.png"
 import home8 from "../assets/home8.jpg"
 import home9 from "../assets/home9.jpg"
+import home10 from "../assets/home10.jpg"
 const CSS = `
   :root {
     /* BASE (from navbar, softened) */
@@ -684,7 +685,7 @@ export default function Home() {
         <div className="section-inner">
           <div className="healer-grid">
             <div className="healer-img-wrap">
-              <img className="healer-img" src="https://trinaya.co.in/images/Prishtavasthy.jpg" alt="Healer" />
+              <img className="healer-img" src={home10} alt="Healer" />
               <div className="healer-ribbon"><div className="hr-num">6000+</div><div className="hr-label">Patients Healed</div></div>
             </div>
             <div>
