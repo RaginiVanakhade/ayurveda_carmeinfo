@@ -1,4 +1,15 @@
 const FONTS = `@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Playfair+Display:ital,wght@0,500;0,600;1,400;1,500&display=swap');`;
+ import about1 from "../assets/about1.jpg"
+ import reason1 from "../assets/reason1.webp"
+ import reason2 from "../assets/reason2.webp"
+ import reason3 from "../assets/reason3.jpeg"
+ import reason4 from "../assets/reason4.webp"
+ import reason5 from "../assets/reason5.webp"
+ import reason6 from "../assets/reason6.webp"
+ import whyus1 from "../assets/whyus1.webp"
+ import whyus2 from "../assets/whyus2.png"
+ import whyus3 from "../assets/whyus3.jpg"
+ import about8 from "../assets/about8.webp"
 
 const CSS = `
   :root {
@@ -39,7 +50,7 @@ const CSS = `
   .why-hero { display:grid; grid-template-columns:1fr 1fr; min-height:92vh; }
 
   .wh-left { background:var(--green-dark); position:relative; overflow:hidden; display:flex; flex-direction:column; justify-content:flex-end; padding:60px 60px 72px; }
-  .wh-bg   { position:absolute; inset:0; background:url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=900') center/cover no-repeat; opacity:0.15; }
+  .wh-bg   { position:absolute; inset:0; background:url(${whyus3}) center/cover no-repeat; opacity:0.15; }
   .wh-ring1 { position:absolute; top:-60px; left:-60px; width:380px; height:380px; border-radius:50%; border:1px solid rgba(255,255,255,0.06); animation:spin 60s linear infinite; pointer-events:none; }
   .wh-ring2 { position:absolute; bottom:40px; right:-80px; width:280px; height:280px; border-radius:50%; border:1px solid rgba(255,255,255,0.04); animation:spin 40s linear infinite reverse; pointer-events:none; }
   .wh-eyebrow { font-family:'Cinzel',serif; font-size:10px; letter-spacing:0.28em; text-transform:uppercase; color:rgba(255,255,255,0.4); display:block; margin-bottom:20px; position:relative; z-index:1; }
@@ -268,7 +279,7 @@ const deepCards = [
   {
     num:"REASON 01",
     ico:"🌿",
-    img:"https://i0.wp.com/www.opindia.com/wp-content/uploads/2020/01/kalari-marma-Massage-13131.jpg?fit=1920%2C1080&ssl=1",
+    img:reason1,
     title:"Authentic Kalaripayattu Nadi Marma Healing",
     desc:"Rooted in Kerala's ancient healing heritage, our therapy combines Kalaripayattu wisdom with precise Marma activation techniques that have been preserved and practiced for generations.",
     tags:["Traditional Wisdom","Marma Therapy","Kerala Heritage","Authentic Practice"],
@@ -277,7 +288,7 @@ const deepCards = [
   {
     num:"REASON 02",
     ico:"🧬",
-    img:"https://ayurvishwahealthcare.com/wp-content/uploads/2025/10/main-copy-1024x581.jpg",
+    img:reason2,
     title:"Personalized Nadi Assessment",
     desc:"Every individual is unique. Through detailed Nadi evaluation and traditional assessment methods, we create a treatment pathway designed specifically for your body's needs and healing potential.",
     tags:["Nadi Reading","Personalized Care","Individual Plan","Holistic Assessment"],
@@ -286,7 +297,7 @@ const deepCards = [
   {
     num:"REASON 03",
     ico:"🏆",
-    img:"https://www.bhagwatiayurveda.com/assets/banner-dc2-D9reLck3.jpeg",
+    img:reason3,
     title:"18+ Years of Dedicated Expertise",
     desc:"With nearly two decades devoted exclusively to Kalaripayattu Nadi Marma Therapy, Unni Gurukkal brings deep experience, refined skill, and unwavering commitment to every patient journey.",
     tags:["18+ Years","Master Practitioner","Deep Experience","Trusted Expertise"],
@@ -295,7 +306,7 @@ const deepCards = [
   {
     num:"REASON 04",
     ico:"❤️",
-    img:"https://yuvrit.in/cdn/shop/files/Vamana_treatment_ayurveda.webp?v=1752501697&width=1200",
+    img:reason4,
     title:"6,000+ Healing Journeys",
     desc:"Thousands of individuals have trusted Ever Ayur Life for support with pain management, mobility improvement, wellness restoration, and overall quality of life enhancement.",
     tags:["6000+ Patients","Trusted Care","Proven Track Record","Life Transformation"],
@@ -304,7 +315,7 @@ const deepCards = [
   {
     num:"REASON 05",
     ico:"⚖️",
-    img:"https://ayurhealing.net/wp-content/uploads/2026/01/Best-Ayurvedic-Treatment-in-Bangalore-Natural-Solutions-for-Pain-Stress-Digestion.jpg",
+    img:reason5,
     title:"Treating the Root Cause",
     desc:"Rather than focusing only on symptoms, our approach seeks to identify and address underlying imbalances within the body, supporting long-term wellness and sustainable recovery.",
     tags:["Root Cause","Long-Term Wellness","Balance","Sustainable Healing"],
@@ -313,7 +324,7 @@ const deepCards = [
   {
     num:"REASON 06",
     ico:"✨",
-    img:"https://ayurvishwahealthcare.com/wp-content/uploads/2025/11/Yoga_and_Ayurveda-1024x683.webp",
+    img:reason6,
     title:"Complete Mind-Body Wellness",
     desc:"Healing extends beyond physical comfort. Our integrated approach combines Marma therapy, breathing practices, movement traditions, and lifestyle guidance to support overall wellbeing.",
     tags:["Mind & Body","Pranayama","Holistic Wellness","Lifestyle Balance"],
@@ -389,7 +400,7 @@ export default function WhyUs() {
         </div>
         <div className="wh-right">
           <div className="wh-img-wrap">
-            <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=900" alt="Healing" />
+            <img src={about1} alt="Healing" />
           </div>
           <div className="wh-stats">
             {[
@@ -613,9 +624,9 @@ export default function WhyUs() {
               <a href="/contact" className="btn-green" style={{marginTop:"28px"}}>Book Your Free Nadi Assessment</a>
             </div>
             <div className="mission-imgs">
-              <div className="mi"><img src="https://5.imimg.com/data5/SELLER/Default/2025/2/487810855/RF/AS/LK/23146979/advanced-kalari-marma-therapy-course-trivandrum-500x500.jpg" alt="Healing" /></div>
-              <div className="mi"><img src="https://tigrisvalley.com/wp-content/uploads/2024/08/image-5.png" alt="Ayurveda" /></div>
-              <div className="mi"><img src="https://shadharawellness.com/wp-content/uploads/2025/05/tharpana.jpg" alt="Therapy" /></div>
+              <div className="mi"><img src={whyus1} alt="Healing" /></div>
+              <div className="mi"><img src={whyus2} alt="Ayurveda" /></div>
+              <div className="mi"><img src={whyus3} alt="Therapy" /></div>
             </div>
           </div>
         </div>
@@ -635,7 +646,7 @@ export default function WhyUs() {
               </div>
             </div>
             <div className="cta-img">
-              <img src="https://cdn.shopify.com/s/files/1/0784/9725/1578/articles/ayr_0bdecce9-7cb7-4df0-94f0-19261758ec6b_800x.jpg?v=1775022208" alt="Natural healing" />
+              <img src={about8} alt="Natural healing" />
               <div className="cta-float">
                 <div className="cf-num">6000+</div>
                 <div className="cf-lbl">Lives Healed</div>
