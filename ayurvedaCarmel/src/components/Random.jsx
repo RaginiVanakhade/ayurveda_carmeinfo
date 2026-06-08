@@ -6,6 +6,12 @@ import { useEffect, useRef, useState } from 'react';
 
 const FONTS = `@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Jost:wght@300;400;500&display=swap');`;
 
+
+import Random from "../assets/random1.webp"
+import Random2 from "../assets/random2.jpg"
+import Random3 from "../assets/random3.jpg"
+import Random4 from "../assets/random4.webp"
+import Random5 from "../assets/random5.jpg"
 const CSS = `
 .eal-ic * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -160,11 +166,11 @@ const LeafSVG = ({ flip = false }) => (
 
 /* DATA */
 const CARDS = [
-  { id: 'natural', src: 'https://hiddenmantra.com/wp-content/uploads/2024/08/Indias-Gift-to-the-World-Yoga-and-Ayurveda-1024x682-1.webp', lines: ['Natural','Healing'], circle: true },
-  { id: 'holistic', src: 'https://chellaramwellness.org/wp-content/uploads/2024/02/Ayurveda2.jpg', lines: ['Holistic','Wellness'] },
-  { id: 'marma', src: 'https://ayuskamarishikesh.com/wp-content/uploads/2025/07/theraphy-marma-300x300.jpg', lines: ['Marma','Therapy'] },
-  { id: 'kalari', src: 'https://www.keralatourism.org/_next/image/?url=http://127.0.0.1/ktadmin/img/pages/mobile/talapotichil-1729349693_4203ff365614268d05d4.webp&w=3840&q=75', lines: ['Kalari','Tradition'] },
-  { id: 'pain', src: 'https://www.lifelineherbal.com.au/webroot/images/listings/99ea4162-a7f0-e900-a84d-a97fce920714_1200_480.jpg', lines: ['Pain Relief','Without Surgery'], circle: true }
+  { id: 'natural', src: Random, lines: ['Natural','Healing'], circle: true },
+  { id: 'holistic', src: Random2, lines: ['Holistic','Wellness'] },
+  { id: 'marma', src: Random3, lines: ['Marma','Therapy'] },
+  { id: 'kalari', src: Random4, lines: ['Kalari','Tradition'] },
+  { id: 'pain', src: Random5, lines: ['Pain Relief','Without Surgery'], circle: true }
 ];
 
 /* CARD */
