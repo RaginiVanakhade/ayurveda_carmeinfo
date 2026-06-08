@@ -1,7 +1,8 @@
 import { useState } from "react";
 
 const FONTS = `@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Playfair+Display:ital,wght@0,500;0,600;1,400;1,500&display=swap');`;
-
+import about7 from "../assets/about7.jpg"
+import ayurved1 from "../assets/ayurved1.webp"
 const CSS = `
   :root {
     --green:       #5a5a2a;
@@ -48,7 +49,7 @@ const CSS = `
   }
   .hero-bg{
     position:absolute;inset:0;
-    background:url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1600') center/cover no-repeat;
+    background:url(${about7}) center/cover no-repeat;
     opacity:0.14;
   }
   /* diagonal lines pattern */
@@ -358,7 +359,7 @@ const CSS = `
   }
   .map-bg{
     position:absolute;inset:0;
-    background:url('https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=800') center/cover no-repeat;
+    background:url(${ayurved1}) center/cover no-repeat;
     opacity:0.2;
   }
   /* grid lines for map feel */
