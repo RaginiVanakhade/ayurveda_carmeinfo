@@ -1,5 +1,15 @@
 const FONTS = `@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Playfair+Display:ital,wght@0,500;0,600;1,400;1,500&display=swap');`;
 
+import Treatment1 from "../assets/treatment1.jpg"
+import Treatment2 from "../assets/treatment2.webp"
+import Treatment3 from "../assets/treatment3.jpg"
+import Treatment4 from "../assets/treatment4.jpg"
+import Treatment5 from "../assets/treatment5.jpg"
+import Treatment6 from "../assets/treatment6.jpg"
+import Treatment7 from "../assets/treatment7.png"
+import Treatment8 from "../assets/treatment8.jpg"
+import Treatment9 from "../assets/treatment9.jpg"
+import Treatment10 from "../assets/treatment10.jpg"
 const CSS = `
   :root {
     --green:       #5a5a2a;
@@ -39,7 +49,7 @@ const CSS = `
     display:flex; align-items:center;
     background:var(--green-dark);
   }
-  .th-bg { position:absolute; inset:0; background:url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1600') center/cover no-repeat; opacity:0.14; }
+  .th-bg { position:absolute; inset:0; background:url(${Treatment1}) center/cover no-repeat; opacity:0.14; }
   .th-ring1 { position:absolute; width:800px; height:800px; border-radius:50%; border:1px solid rgba(255,255,255,0.04); top:50%; left:50%; transform:translate(-50%,-50%); animation:spin 90s linear infinite; pointer-events:none; }
   .th-ring2 { position:absolute; width:560px; height:560px; border-radius:50%; border:1px solid rgba(255,255,255,0.06); top:50%; left:50%; transform:translate(-50%,-50%); animation:spin 60s linear infinite reverse; pointer-events:none; }
   .th-ring3 { position:absolute; width:360px; height:360px; border-radius:50%; border:1px solid rgba(255,255,255,0.09); top:50%; left:50%; transform:translate(-50%,-50%); animation:spin 38s linear infinite; pointer-events:none; }
@@ -256,7 +266,7 @@ const treatCards = [
     cat: "Pain Care",
     num: "8+ Conditions",
     ico: "🦴",
-    img: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=700",
+    img: Treatment3,
     title: "Pain & Musculoskeletal Disorders",
     desc: "Chronic pain often arises from deep imbalances within muscles, joints, nerves, and connective tissues. Our Nadi Marma treatments focus on restoring mobility, reducing discomfort, and addressing the root cause naturally.",
     pills: [
@@ -274,7 +284,7 @@ const treatCards = [
     cat: "Joint Health",
     num: "6+ Conditions",
     ico: "🦵",
-    img: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=700",
+    img: Treatment4,
     title: "Joint & Degenerative Conditions",
     desc: "Degenerative joint disorders can affect mobility and quality of life. Through Marma Therapy, Yoga, and corrective healing practices, we help support joint function and natural movement.",
     pills: [
@@ -290,7 +300,7 @@ const treatCards = [
     cat: "Neurology",
     num: "5+ Conditions",
     ico: "🧠",
-    img: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=700",
+    img: Treatment5,
     title: "Neurological & Nerve Disorders",
     desc: "The nervous system governs every movement and sensation in the body. Our therapies are designed to support nerve function, circulation, and neurological wellbeing.",
     pills: [
@@ -305,7 +315,7 @@ const treatCards = [
     cat: "Women's Health",
     num: "4+ Conditions",
     ico: "🌸",
-    img: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=700",
+    img: Treatment6,
     title: "Women's Wellness",
     desc: "Women's health concerns often involve hormonal, physical, and emotional factors. Our holistic treatment approach supports balance and overall wellbeing.",
     pills: [
@@ -319,7 +329,7 @@ const treatCards = [
     cat: "General Wellness",
     num: "10+ Conditions",
     ico: "💚",
-    img: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=700",
+    img: Treatment7,
     title: "General Health & Wellness",
     desc: "Many everyday health concerns can impact comfort, energy, and vitality. Our treatments focus on restoring balance throughout the body and supporting long-term wellness.",
     pills: [
@@ -335,7 +345,7 @@ const treatCards = [
     cat: "Vitality",
     num: "Mind & Body",
     ico: "🌿",
-    img: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=700",
+    img: Treatment8,
     title: "Mental Wellbeing & Vitality",
     desc: "Physical health and emotional wellbeing are deeply connected. Marma Therapy, Yoga, and Pranayama work together to support balance, clarity, and vitality.",
     pills: [
@@ -436,7 +446,7 @@ export default function Treatment() {
             </div>
           </div>
           <div className="th-visual">
-            <img className="th-img" src="https://ayurvedaorganics.com.au/cdn/shop/articles/how-anti-ageing-face-masks-and-serums-work-together-in-ayurvedic-skincare-7212009.png?v=1771475416&width=2048" alt="Marma Healing" />
+            <img className="th-img" src={Treatment2} alt="Marma Healing" />
             <div className="th-float-1">
               <div className="tf-num">6000+</div>
               <div className="tf-lbl">Patients Healed</div>
@@ -522,7 +532,7 @@ export default function Treatment() {
             </div>
           </div>
           <div className="sp-visual">
-            <img className="sp-img" src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=800" alt="Natural Healing" />
+            <img className="sp-img" src={Treatment9} alt="Natural Healing" />
             <div className="sp-badge">
               <div className="spb-num">0</div>
               <div className="spb-lbl">Surgeries Needed</div>
@@ -657,7 +667,7 @@ export default function Treatment() {
               </div>
             </div>
             <div className="cta-img">
-              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=900" alt="Natural Healing" />
+              <img src={Treatment10} alt="Natural Healing" />
               <div className="cta-float">
                 <div className="cf-num">Drug-Free</div>
                 <div className="cf-lbl">100% Natural</div>
