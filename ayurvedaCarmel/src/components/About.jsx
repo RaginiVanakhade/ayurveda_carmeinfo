@@ -1,5 +1,13 @@
 const FONTS = `@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Playfair+Display:ital,wght@0,500;0,600;1,400;1,500&display=swap');`;
 
+import about1 from "../assets/about1.jpg"
+import about2 from "../assets/about2.jpg"
+import about3 from "../assets/about3.jpg"
+import about4 from "../assets/about4.webp"
+import about5 from "../assets/about5.webp"
+import about6 from "../assets/about6.png"
+import about7 from "../assets/about7.jpg"
+import about8 from "../assets/about8.webp"
 const CSS = `
   :root {
     --green:       #5a5a2a;
@@ -346,7 +354,7 @@ export default function About() {
         </div>
         <div className="sh-right">
           <div className="sh-img-top">
-            <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=900" alt="Marma Therapy"/>
+            <img src={about1} alt="Marma Therapy"/>
           </div>
           <div className="sh-stats-row">
             {[
@@ -368,7 +376,7 @@ export default function About() {
       <div>
         <div className="zz-block">
           <div className="zz-img">
-            <img src="https://shadharawellness.com/wp-content/uploads/2025/05/tharpana.jpg" alt="Kerala tradition"/>
+            <img src={about2} alt="Kerala tradition"/>
             <div className="zz-overlay"/>
           </div>
           <div className="zz-content">
@@ -390,7 +398,7 @@ export default function About() {
         </div>
         <div className="zz-block reverse">
           <div className="zz-img">
-            <img src="https://spalotusrelaxation.com/wp-content/uploads/2024/09/massage.jpg" alt="Ayurvedic herbs"/>
+            <img src={about3} alt="Ayurvedic herbs"/>
             <div className="zz-overlay"/>
           </div>
           <div className="zz-content">
@@ -417,7 +425,7 @@ export default function About() {
             <h2 className="tl-name">Unni<br/>Gurukkal</h2>
             <div className="tl-role">Master · Kalaripayattu Nadi Marma</div>
             <div className="tl-img-wrap">
-              <img className="tl-img" src="https://img.punjabijagran.com/webstories/119546/benefits-of-foot-massage-1735451545.webp" alt="Unni Gurukkal"/>
+              <img className="tl-img" src={about4} alt="Unni Gurukkal"/>
               <div className="tl-ribbon">
                 <div className="tr-num">6000+</div>
                 <div className="tr-lbl">Patients Healed</div>
@@ -584,9 +592,9 @@ export default function About() {
             </div>
           </div>
           <div className="mission-imgs">
-            <div className="mi"><img src="https://5.imimg.com/data5/SELLER/Default/2025/2/487810855/RF/AS/LK/23146979/advanced-kalari-marma-therapy-course-trivandrum-500x500.jpg" alt="Healing"/></div>
-            <div className="mi"><img src="https://tigrisvalley.com/wp-content/uploads/2024/08/image-5.png" alt="Ayurveda"/></div>
-            <div className="mi"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQURQInml5z8ANtHbAuJijoHmX8O5Gzu4Ie3Q&s" alt="Therapy"/></div>
+            <div className="mi"><img src={about5} alt="Healing"/></div>
+            <div className="mi"><img src={about6} alt="Ayurveda"/></div>
+            <div className="mi"><img src={about7} alt="Therapy"/></div>
           </div>
         </div>
       </section>
@@ -605,7 +613,7 @@ export default function About() {
               </div>
             </div>
             <div className="cta-img-side">
-              <img src="https://cdn.shopify.com/s/files/1/0784/9725/1578/articles/ayr_0bdecce9-7cb7-4df0-94f0-19261758ec6b_800x.jpg?v=1775022208" alt="Nature healing"/>
+              <img src={about8} alt="Nature healing"/>
               <div className="cta-float">
                 <div className="cf-num">6000+</div>
                 <div className="cf-lbl">Lives Healed</div>
