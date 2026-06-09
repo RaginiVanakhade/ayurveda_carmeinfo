@@ -228,6 +228,33 @@ const FOOTER_CSS = `
   .ft2-img-cell:nth-child(n+4) { display: none; }
   .ft2-bottom { padding: 8px 20px; }
 }
+
+
+/* BOTTOM BAR */
+.ft2-bottom {
+  padding: 10px 40px;
+  border-top: 1px solid rgba(138,120,78,0.12);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ft2-dev-credit {
+  font-size: 9px;
+  font-weight: 300;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(138,120,78,0.45);
+}
+.ft2-dev-credit a {
+  color: rgba(174,200,164,0.55);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+.ft2-dev-credit a:hover {
+  color: #AEC8A4;
+  border-bottom-color: rgba(138,120,78,0.4);
+}
 `;
 
 const marqueeItems = [
@@ -381,6 +408,16 @@ export default function Footer() {
           </div>
 
         </div>
+
+        {/* BOTTOM */}
+<div className="ft2-bottom">
+  <span className="ft2-dev-credit">
+    Developed by&nbsp;
+    <a href="https://carmelinfosystems.com" target="_blank" rel="noopener noreferrer">
+      CIS
+    </a>
+  </span>
+</div>
 
       </footer>
     </>

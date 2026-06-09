@@ -711,7 +711,7 @@ export default function Contact() {
     name: "",
     phone: "",
     email: "",
-    city: "Malappuram, Edappal,Kerala, India",
+    city: "",
     message: "",
     date: ""
   });
@@ -981,19 +981,17 @@ export default function Contact() {
                         />
                         <label className="fc-lbl">Email (Optional)</label>
                       </div>
-                      <div className="fc-field">
-                        <select
-                          className="fc-select"
-                          name="city"
-                          value={form.city}
-                          onChange={handleChange}
-                        >
-                          <option value="Malappuram, Edappal,Kerala, India">
-                            Malappuram, Edappal, Kerala, India
-                          </option>
-                        </select>
-                        <label className="fc-lbl">Your City</label>
-                      </div>
+                    <div className="fc-field">
+  <input
+    className="fc-input"
+    type="text"
+    name="city"
+    placeholder=" "
+    value={form.city}
+    onChange={handleChange}
+  />
+  <label className="fc-lbl">Your City</label>
+</div>
                       <div className="fc-field full">
                         <textarea
                           className="fc-textarea"
